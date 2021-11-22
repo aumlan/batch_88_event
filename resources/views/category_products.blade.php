@@ -52,7 +52,7 @@
                                 <div class="single-product-wrap">
                                     <div class="thumb">
                                         @if (count($prd->productImage) > 0)
-                                            <img src="{{ thumbnail($prd->productImage[0]->image) }}" alt="img" width="200px" style="object-fit: contain;width: 100%;height: 100%;}">
+                                            <img src="{{ thumbnail($prd->productImage[0]->image) }}" alt="img" width="200px" style="object-fit: contain;width: 100%;height: 100%;">
                                         @endif
 
                                         <a class="btn btn-base bg-main" href="{{ route('product.details', [$prd->id, $prd->slug]) }}"><span class="border-1"></span><span
