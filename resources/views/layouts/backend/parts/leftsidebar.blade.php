@@ -95,6 +95,10 @@
 
             <li class="@if(Route::is('admin.slider.index')) active @endif nav-item"><a href="{{route('admin.slider.index')}}"><i class="fa fa-sliders"></i><span class="menu-title" data-i18n="Dashboard">Slider</span></a>
             </li>
+
+            <li class="@if(Route::is('admin.gallery.index')) active @endif nav-item"><a href="{{route('admin.gallery.index')}}"><i class="fa fa-sliders"></i><span class="menu-title" data-i18n="Dashboard">Gallery</span></a>
+            </li>
+
             {{-- <li class="@if(Route::is('admin.banner.index')) active @endif nav-item"><a href="{{route('admin.banner.index')}}"><i class="fa fa-clone"></i><span class="menu-title" data-i18n="Dashboard">Banner</span></a></li> --}}
 
             <!-- Setting Section -->

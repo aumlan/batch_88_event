@@ -7,6 +7,7 @@ use App\Models\Brand;
 use App\Models\BrandModel;
 use App\Models\BrandModelYear;
 use App\Models\Currency;
+use App\Models\Gallery;
 use App\Models\Product;
 use App\Models\Slider;
 use App\QueryFilters\Brand_Sort;
@@ -29,6 +30,7 @@ class HomeController extends Controller
 
        $sliders = Slider::orderBy('id','DESC')->get();
        $brands = Brand::orderBy('id','DESC')->get();
+       $gallery = Gallery::orderBy('id','DESC')->get();
 
        $best_selling = Product::orderBy('id','DESC')->where('productShowingPlace','Best Selling Product')->limit(4)->get();
        $featured_products = Product::orderBy('id','DESC')->where('productShowingPlace','Feature Product')->limit(4)->get();
@@ -36,9 +38,9 @@ class HomeController extends Controller
        $top_reacted = Product::orderBy('id','DESC')->where('productShowingPlace','Top Reacted')->limit(4)->get();
 
         if(!MoBileView()){
-       return view('welcome_mymorich',compact('featured_products','top_reacted','best_selling','new_arrivals','brands','sliders','featured_products'));
+       return view('welcome_mymorich',compact('featured_products','top_reacted','best_selling','new_arrivals','brands','sliders','featured_products','gallery'));
        }else{
-        return view('mobile.welcome',compact('featured_products','top_reacted','best_selling','new_arrivals','brands','sliders','featured_products'));
+        return view('mobile.welcome',compact('featured_products','top_reacted','best_selling','new_arrivals','brands','sliders','featured_products','gallery'));
        }
     }
 

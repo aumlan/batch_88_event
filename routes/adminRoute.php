@@ -175,6 +175,11 @@ Route::group(['prefix' => 'admin','namespace' => 'Backend','as'=>'admin.','middl
 //
 //    Route::get('/software-product/category/{category_id}','Product\ProductController@filterByCategory')->name('product.category');
 
+    //Gallery route
+    Route::get('/gallery/index','Gallery\GalleryController@index')->name('gallery.index');
+    Route::post('/gallery/store','Gallery\GalleryController@store')->name('gallery.store');
+    Route::post('/gallery/update/{id}','Gallery\GalleryController@update')->name('gallery.update');
+    Route::get('/gallery/delete/{id}','Gallery\GalleryController@destroy')->name('gallery.destroy');
 
 
 });

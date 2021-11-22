@@ -10,7 +10,7 @@
     'locale' => 'en',
     'fallback_locale' => 'en',
     'faker_locale' => 'en_US',
-    'key' => 'base64:y69C49b7KrYPYP0DP1KPX06mYTtrzGfRlogqH39EGW0=',
+    'key' => 'base64:thGdZcTwNr0X1hQuWVqoFOphn467ynh3Xj4/ljbI3ws=',
     'cipher' => 'AES-256-CBC',
     'providers' => 
     array (
@@ -210,7 +210,7 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => 'F:\\New folder\\ZZZ 28-10 - Copy\\storage\\framework/cache/data',
+        'path' => 'F:\\Batch_88\\ZZZ 28-10 - Copy\\storage\\framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -306,7 +306,7 @@
       array (
         'driver' => 'sqlite',
         'url' => NULL,
-        'database' => 'mymorich_new_new',
+        'database' => 'batch_88',
         'prefix' => '',
         'foreign_key_constraints' => true,
       ),
@@ -316,7 +316,7 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'mymorich_new_new',
+        'database' => 'batch_88',
         'username' => 'root',
         'password' => '',
         'unix_socket' => '',
@@ -336,7 +336,7 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'mymorich_new_new',
+        'database' => 'batch_88',
         'username' => 'root',
         'password' => '',
         'charset' => 'utf8',
@@ -351,7 +351,7 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'mymorich_new_new',
+        'database' => 'batch_88',
         'username' => 'root',
         'password' => '',
         'charset' => 'utf8',
@@ -394,12 +394,12 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => 'F:\\New folder\\ZZZ 28-10 - Copy\\storage\\app',
+        'root' => 'F:\\Batch_88\\ZZZ 28-10 - Copy\\storage\\app',
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => 'F:\\New folder\\ZZZ 28-10 - Copy\\storage\\app/public',
+        'root' => 'F:\\Batch_88\\ZZZ 28-10 - Copy\\storage\\app/public',
         'url' => 'http://simcomart.com/storage',
         'visibility' => 'public',
       ),
@@ -416,7 +416,7 @@
     ),
     'links' => 
     array (
-      'F:\\New folder\\ZZZ 28-10 - Copy\\public\\storage' => 'F:\\New folder\\ZZZ 28-10 - Copy\\storage\\app/public',
+      'F:\\Batch_88\\ZZZ 28-10 - Copy\\public\\storage' => 'F:\\Batch_88\\ZZZ 28-10 - Copy\\storage\\app/public',
     ),
   ),
   'hashing' => 
@@ -557,13 +557,13 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => 'F:\\New folder\\ZZZ 28-10 - Copy\\storage\\logs/laravel.log',
+        'path' => 'F:\\Batch_88\\ZZZ 28-10 - Copy\\storage\\logs/laravel.log',
         'level' => 'debug',
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => 'F:\\New folder\\ZZZ 28-10 - Copy\\storage\\logs/laravel.log',
+        'path' => 'F:\\Batch_88\\ZZZ 28-10 - Copy\\storage\\logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
       ),
@@ -614,7 +614,7 @@
       ),
       'emergency' => 
       array (
-        'path' => 'F:\\New folder\\ZZZ 28-10 - Copy\\storage\\logs/laravel.log',
+        'path' => 'F:\\Batch_88\\ZZZ 28-10 - Copy\\storage\\logs/laravel.log',
       ),
     ),
   ),
@@ -671,7 +671,7 @@
       'theme' => 'default',
       'paths' => 
       array (
-        0 => 'F:\\New folder\\ZZZ 28-10 - Copy\\resources\\views/vendor/mail',
+        0 => 'F:\\Batch_88\\ZZZ 28-10 - Copy\\resources\\views/vendor/mail',
       ),
     ),
   ),
@@ -802,7 +802,7 @@
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => 'F:\\New folder\\ZZZ 28-10 - Copy\\storage\\framework/sessions',
+    'files' => 'F:\\Batch_88\\ZZZ 28-10 - Copy\\storage\\framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -822,9 +822,9 @@
   array (
     'paths' => 
     array (
-      0 => 'F:\\New folder\\ZZZ 28-10 - Copy\\resources\\views',
+      0 => 'F:\\Batch_88\\ZZZ 28-10 - Copy\\resources\\views',
     ),
-    'compiled' => 'F:\\New folder\\ZZZ 28-10 - Copy\\storage\\framework\\views',
+    'compiled' => 'F:\\Batch_88\\ZZZ 28-10 - Copy\\storage\\framework\\views',
   ),
   'flare' => 
   array (
