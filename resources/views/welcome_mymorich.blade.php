@@ -24,26 +24,26 @@
 
     <hr style="width: 75%">
 
-    <section class="product-area text-center pd-top-35">
-        <div class="container">
-            <div class="row  mb-4 justify-content-center">
-                <div class="col-lg-3">
-                    <div class="section-title fancy-border">
-                        <span class="option_highlight">Top Reacted</span>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                @foreach ($top_reacted as $prd)
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-product-wrap">
-                            <div class="thumb">
-                                @if (count($prd->productImage) > 0)
-                                    <img src="{{ thumbnail($prd->productImage[0]->image) }}" alt="img" width="200px" style="object-fit: contain;width: 100%;height: 100%;}">
-                                @endif
+{{--    <section class="product-area text-center pd-top-35">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row  mb-4 justify-content-center">--}}
+{{--                <div class="col-lg-3">--}}
+{{--                    <div class="section-title fancy-border">--}}
+{{--                        <span class="option_highlight">Gallery</span>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="row justify-content-center">--}}
+{{--                @foreach ($top_reacted as $prd)--}}
+{{--                    <div class="col-lg-3 col-sm-6">--}}
+{{--                        <div class="single-product-wrap">--}}
+{{--                            <div class="thumb">--}}
+{{--                                @if (count($prd->productImage) > 0)--}}
+{{--                                    <img src="{{ thumbnail($prd->productImage[0]->image) }}" alt="img" width="200px" style="object-fit: contain;width: 100%;height: 100%;}">--}}
+{{--                                @endif--}}
 
-                                <a class="btn btn-base bg-main" href="{{ route('product.details', [$prd->id, $prd->slug]) }}"><span class="border-1"></span><span
-                                        class="border-2"></span>QUICK VIEW</a>
+{{--                                <a class="btn btn-base bg-main" href="{{ route('product.details', [$prd->id, $prd->slug]) }}"><span class="border-1"></span><span--}}
+{{--                                        class="border-2"></span>QUICK VIEW</a>--}}
 {{--                                <ul>--}}
 {{--                                    <li><a href="#"><i class="far fa-heart"></i></a></li>--}}
 {{--                                    <li><a href="#"><img src="{{ asset('FrontendAsset/img/icon/git-compare.png') }}"--}}
@@ -51,33 +51,35 @@
 {{--                                    <li><a href="#"><img src="{{ asset('FrontendAsset/img/icon/shopping-bag.png') }}"--}}
 {{--                                                         alt="img"></a></li>--}}
 {{--                                </ul>--}}
-                            </div>
-                            <div class="wrap-details">
-                                <span class="categories">{{ $prd->category ? $prd->category->name : '' }}</span>
-                                <h6><a
-                                        href="{{ route('product.details', [$prd->id, $prd->slug]) }}">
-                                        <span style="color: #ff8e01">{{ $prd->name }}</span>
-                                    </a>
-                                </h6>
-                                <div class="star-rating">
-                                    <span><i class="la la-star"></i></span>
-                                    <span><i class="la la-star"></i></span>
-                                    <span><i class="la la-star"></i></span>
-                                    <span><i class="la la-star"></i></span>
-                                    <span><i class="la la-star"></i></span>
-                                </div>
-                                <span
-                                    class="price">AED{{ $prd->sales_price_aed }}</span>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
+{{--                            </div>--}}
+{{--                            <div class="wrap-details">--}}
+{{--                                <span class="categories">{{ $prd->category ? $prd->category->name : '' }}</span>--}}
+{{--                                <h6><a--}}
+{{--                                        href="{{ route('product.details', [$prd->id, $prd->slug]) }}">--}}
+{{--                                        <span style="color: #ff8e01">{{ $prd->name }}</span>--}}
+{{--                                    </a>--}}
+{{--                                </h6>--}}
+{{--                                <div class="star-rating">--}}
+{{--                                    <span><i class="la la-star"></i></span>--}}
+{{--                                    <span><i class="la la-star"></i></span>--}}
+{{--                                    <span><i class="la la-star"></i></span>--}}
+{{--                                    <span><i class="la la-star"></i></span>--}}
+{{--                                    <span><i class="la la-star"></i></span>--}}
+{{--                                </div>--}}
+{{--                                <span--}}
+{{--                                    class="price">AED{{ $prd->sales_price_aed }}</span>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                @endforeach--}}
 
-            </div>
-        </div>
-    </section>
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </section>--}}
 
-    <section class="product-area text-center pd-top-35">
+
+
+    <section class="product-area text-center pd-top-35 mb-5">
 
 {{--        <div class="container_custom">--}}
 {{--            @foreach ($gallery as $g)--}}
@@ -89,6 +91,14 @@
 {{--        </div>--}}
 
         <div class="container">
+            <div class="row  mb-4 justify-content-center">
+                <div class="col-lg-3">
+                    <div class="section-title fancy-border">
+                        <span class="option_highlight">Gallery</span>
+                    </div>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="row">
                     @foreach ($gallery as $g)
@@ -132,6 +142,55 @@
         </div>
 
 
+
+
+    </section>
+
+    <hr style="width: 75%">
+
+    <section class="product-area pd-top-35 mb-5">
+
+        <div class="container">
+            <div class="row  mb-4 justify-content-center">
+                <div class="col-lg-3">
+                    <div class="section-title fancy-border">
+                        <span class="option_highlight">Contact Us</span>
+                    </div>
+                </div>
+            </div>
+            <div class="screen">
+
+                <div class="screen-body">
+                    <div class="screen-body-item left">
+                        <div class="app-title">
+                            <span>CONTACT</span>
+                            <span>US</span>
+                        </div>
+                        <div class="app-contact">CONTACT : +88017 1010 0202</div>
+                    </div>
+                    <div class="screen-body-item">
+                        <div class="app-form">
+                            <div class="app-form-group">
+                                <input class="app-form-control" placeholder="NAME" value="">
+                            </div>
+                            <div class="app-form-group">
+                                <input class="app-form-control" placeholder="EMAIL">
+                            </div>
+                            <div class="app-form-group">
+                                <input class="app-form-control" placeholder="CONTACT NO">
+                            </div>
+                            <div class="app-form-group message">
+                                <input class="app-form-control" placeholder="MESSAGE">
+                            </div>
+                            <div class="app-form-group buttons">
+                                <button class="app-form-button">CANCEL</button>
+                                <button class="app-form-button">SEND</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </section>
