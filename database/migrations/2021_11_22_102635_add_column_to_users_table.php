@@ -14,11 +14,15 @@ class AddColumnToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('whatsapp')->nullable();
             $table->string('school')->nullable();
-            $table->string('batch')->nullable();
-            $table->string('thana')->nullable();
-            $table->string('upazila')->nullable();
+            $table->string('dob')->nullable();
+            $table->string('zila')->nullable();
+            $table->string('designation')->nullable();
+            $table->string('permanent_address')->nullable();
+            $table->string('current_address')->nullable();
+            $table->string('blood')->nullable();
+            $table->string('bikash')->nullable();
+            $table->string('fb')->nullable();
             $table->string('picture')->nullable();
         });
     }

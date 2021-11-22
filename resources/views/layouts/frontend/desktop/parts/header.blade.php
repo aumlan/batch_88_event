@@ -593,18 +593,22 @@
 {{--                                        </div>--}}
 
 {{--                                    </li>--}}
-                                    <li class=" text-uppercase mr-3"><a href={{ route('welcome') }}> Home </a></li>
-                                    <li class=" text-uppercase mr-3"><a href={{ route('terms.about') }}> About Us </a></li>
+                                    <li class=" text-uppercase mr-3"><a href={{ route('welcome') }}> হোম  </a></li>
+                                    <li class=" text-uppercase mr-3"><a href={{ route('terms.about') }}> চ্যারিটি ফোরাম </a></li>
+                                    <li class=" text-uppercase mr-3"><a href={{ route('terms.about') }}> শিক্ষা ফোরাম </a></li>
+                                    <li class=" text-uppercase mr-3"><a href={{ route('terms.about') }}> পরিবেশ ফোরাম </a></li>
+                                    <li class=" text-uppercase mr-3"><a href={{ route('terms.about') }}> কালচারাল ফোরাম </a></li>
+                                    <li class=" text-uppercase mr-3"><a href={{ route('terms.about') }}> মিডিয়া ফোরাম </a></li>
 
-                                    @foreach($global_categories as $category)
-                                        <li class=" text-uppercase mr-3">
-                                            <a href={{ route('category.products', [$category->id, $category->name] ) }}> {{ $category->name }} </a>
-                                        </li>
-                                    @endforeach
+{{--                                    @foreach($global_categories as $category)--}}
+{{--                                        <li class=" text-uppercase mr-3">--}}
+{{--                                            <a href={{ route('category.products', [$category->id, $category->name] ) }}> {{ $category->name }} </a>--}}
+{{--                                        </li>--}}
+{{--                                    @endforeach--}}
 
 
 
-                                    <li class=" text-uppercase mr-3"><a href={{ route('contact') }}> Contact </a></li>
+{{--                                    <li class=" text-uppercase mr-3"><a href={{ route('contact') }}> Contact </a></li>--}}
 
 {{--                                    <li class=" text-uppercase"><a href={{ route('software.list') }}> Software/Token </a></li>--}}
 {{--                                    <li class=" text-uppercase"><a href="#"> Downloads </a></li>--}}

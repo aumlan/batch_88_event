@@ -55,14 +55,7 @@
                                                         @enderror
                                                     </div>
 
-                                                    <div class="form-label-group mb-2">
-                                                        <input type="number" id="inputWhatsapp" class="form-control" @error('whatsapp') is-invalid @enderror name="whatsapp" value="{{ old('whatsapp') }}" placeholder="Whatsapp" required autocomplete="whatsapp">
-                                                        @error('whatsapp')
-                                                        <span class="invalid-feedback" role="alert">
-                                                                <strong>{{ $message }}</strong>
-                                                            </span>
-                                                        @enderror
-                                                    </div>
+
 
                                                     <div class="form-label-group mb-2">
                                                         <input type="text" id="inputSchool" class="form-control" @error('school') is-invalid @enderror name="school" value="{{ old('school') }}" placeholder="School Name" required autocomplete="school">
@@ -73,20 +66,9 @@
                                                         @enderror
                                                     </div>
 
-
                                                     <div class="form-label-group mb-2">
-                                                        <input type="text" id="inputBatch" class="form-control" @error('batch') is-invalid @enderror name="batch" value="{{ old('batch') }}" placeholder="Batch" required autocomplete="batch">
-                                                        @error('batch')
-                                                        <span class="invalid-feedback" role="alert">
-                                                                <strong>{{ $message }}</strong>
-                                                            </span>
-                                                        @enderror
-                                                    </div>
-
-
-                                                    <div class="form-label-group mb-2">
-                                                        <input type="text" id="inputThana" class="form-control" @error('thana') is-invalid @enderror name="thana" value="{{ old('thana') }}" placeholder="Thana" required autocomplete="Thana">
-                                                        @error('thana')
+                                                        <input type="date" id="inputDOB" class="form-control" @error('dob') is-invalid @enderror name="dob" value="{{ old('dob') }}" placeholder="Date of Birth" required autocomplete="dob">
+                                                        @error('dob')
                                                         <span class="invalid-feedback" role="alert">
                                                                 <strong>{{ $message }}</strong>
                                                             </span>
@@ -94,8 +76,34 @@
                                                     </div>
 
                                                     <div class="form-label-group mb-2">
-                                                        <input type="text" id="inputUpazila" class="form-control" @error('Upazila') is-invalid @enderror name="upazila" value="{{ old('upazila') }}" placeholder="Upazila" required autocomplete="upazila">
-                                                        @error('upazila')
+                                                        <input type="text" id="inputZila" class="form-control" @error('zila') is-invalid @enderror name="zila" value="{{ old('zila') }}" placeholder="zila" required autocomplete="zila">
+                                                        @error('zila')
+                                                        <span class="invalid-feedback" role="alert">
+                                                                <strong>{{ $message }}</strong>
+                                                            </span>
+                                                        @enderror
+                                                    </div>
+
+                                                    <div class="form-label-group">
+                                                        <select id="designation" name="designation" style="width: 100%">
+                                                            <option value="" disabled selected>Designation</option>
+                                                            <option value="coordinator">Coordinator</option>
+                                                            <option value="joint_coordinator">Joint Coordinator</option>
+                                                            <option value="school_representative">School Representative</option>
+                                                            <option value="panel_member">Panel Member</option>
+                                                            <option value="general_member">General Member</option>
+                                                            <option value="other">Others</option>
+                                                        </select>
+                                                        @error('designation')
+                                                        <span class="invalid-feedback" role="alert">
+                                                                <strong>{{ $message }}</strong>
+                                                            </span>
+                                                        @enderror
+                                                    </div>
+
+                                                    <div class="form-label-group mb-2"  style= "margin-top: 60px">
+                                                        <input type="text" id="inputPermanentAddress" class="form-control" @error('permanentAddress') is-invalid @enderror name="permanentAddress" value="{{ old('permanentAddress') }}" placeholder="Permanent Address" required autocomplete="permanentAddress">
+                                                        @error('permanentAddress')
                                                         <span class="invalid-feedback" role="alert">
                                                                 <strong>{{ $message }}</strong>
                                                             </span>
@@ -103,6 +111,53 @@
                                                     </div>
 
                                                     <div class="form-label-group mb-2">
+                                                        <input type="text" id="currentAddress" class="form-control" @error('currentAddress') is-invalid @enderror name="currentAddress" value="{{ old('currentAddress') }}" placeholder="Current Address" required autocomplete="currentAddress">
+                                                        @error('permanentAddress')
+                                                        <span class="invalid-feedback" role="alert">
+                                                                <strong>{{ $message }}</strong>
+                                                            </span>
+                                                        @enderror
+                                                    </div>
+
+                                                    <div class="form-label-group">
+                                                        <select id="blood" name="blood" style="width: 100%">
+                                                            <option value="" disabled selected>Blood Group</option>
+                                                            <option vlaue="a_pos">A Positive</option>
+                                                            <option vlaue="a_neg">A Negative</option>
+                                                            <option vlaue="b_pos">B Positive</option>
+                                                            <option vlaue="b_neg">B Negative</option>
+                                                            <option vlaue="ab_pos">AB Positive </option>
+                                                            <option vlaue="ab_neg">AB Negative</option>
+                                                            <option vlaue="o_pos">O Positive</option>
+                                                            <option vlaue="o_neg">O Negative</option>
+                                                            <option vlaue="unknown">Unknown</option>
+                                                        </select>
+                                                        @error('blood')
+                                                        <span class="invalid-feedback" role="alert">
+                                                                <strong>{{ $message }}</strong>
+                                                            </span>
+                                                        @enderror
+                                                    </div>
+
+                                                    <div class="form-label-group mb-2" style="margin-top: 60px">
+                                                        <input type="text" id="inputBikash" class="form-control" @error('bikash') is-invalid @enderror name="bikash" value="{{ old('bikash') }}" placeholder="Bikash Number" required autocomplete="bikash">
+                                                        @error('bikash')
+                                                        <span class="invalid-feedback" role="alert">
+                                                                <strong>{{ $message }}</strong>
+                                                            </span>
+                                                        @enderror
+                                                    </div>
+
+                                                    <div class="form-label-group mb-2">
+                                                        <input type="text" id="inputFB" class="form-control" @error('fb') is-invalid @enderror name="fb" value="{{ old('fb') }}" placeholder="Facebook ID" required autocomplete="fb">
+                                                        @error('fb')
+                                                        <span class="invalid-feedback" role="alert">
+                                                                <strong>{{ $message }}</strong>
+                                                            </span>
+                                                        @enderror
+                                                    </div>
+
+                                                    <div class="form-label-group mb-2" >
 
                                                         <input type="file" id="icon-pic" class="form-control" name="picture">
 

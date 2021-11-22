@@ -55,13 +55,16 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'phone' => ['required'],
-            'whatsapp' => ['required'],
             'school' => ['required'],
-            'batch' => ['required'],
-            'thana' => ['required'],
-            'upazila' => ['required'],
-            'picture' => ['required']
-
+            'dob'=> ['required'],
+            'zila'=> ['required'],
+            'designation'=> ['required'],
+            'permanentAddress'=> ['required'],
+            'currentAddress'=> ['required'],
+            'blood'=> ['required'],
+            'bikash'=> ['required'],
+            'fb'=> ['required'],
+            'picture'=> ['required']
         ]);
     }
 
@@ -100,12 +103,16 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'phone' => $data['phone'],
-            'whatsapp' => $data['whatsapp'],
             'school' => $data['school'],
-            'batch' => $data['batch'],
-            'thana' => $data['thana'],
-            'upazila' => $data['upazila'],
-            'picture' => $data['picture'],
+            'dob'=> $data['dob'],
+            'zila'=> $data['zila'],
+            'designation'=> $data['designation'],
+            'permanent_address'=> $data['permanentAddress'],
+            'current_address'=> $data['currentAddress'],
+            'blood'=> $data['blood'],
+            'bikash'=> $data['bikash'],
+            'fb'=> $data['fb'],
+            'picture'=> $data['picture'],
             'password' => Hash::make($data['password']),
         ]);
     }
