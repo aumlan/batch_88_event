@@ -27,7 +27,7 @@
                         <div class="card  mb-0 p-4 w-100" style="border-radius: 10px;">
                             <div class="text-center mb-4">
                                 <div class="card-title">
-                                    <h4 class="pl-4">রেজিস্ট্রেশান ফর্ম </h4>
+                                    <h4 class="pl-4">রেজিস্ট্রেশন   ফর্ম </h4>
                                 </div>
                             </div>
                             <div class="row m-0">
@@ -142,15 +142,15 @@
                                                         <label style="width: 30%">রক্তের গ্রুপ</label>
                                                         <select id="blood" name="blood" style="width: 100%">
                                                             <option value="" disabled selected>রক্তের গ্রুপ</option>
-                                                            <option vlaue="a_pos">A Positive</option>
-                                                            <option vlaue="a_neg">A Negative</option>
-                                                            <option vlaue="b_pos">B Positive</option>
-                                                            <option vlaue="b_neg">B Negative</option>
-                                                            <option vlaue="ab_pos">AB Positive </option>
-                                                            <option vlaue="ab_neg">AB Negative</option>
-                                                            <option vlaue="o_pos">O Positive</option>
-                                                            <option vlaue="o_neg">O Negative</option>
-                                                            <option vlaue="unknown">Unknown</option>
+                                                            <option vlaue="a_pos">এ পজিটিভ </option>
+                                                            <option vlaue="a_neg">এ নেগেটিভ </option>
+                                                            <option vlaue="b_pos">বি পজিটিভ </option>
+                                                            <option vlaue="b_neg">বি নেগেটিভ </option>
+                                                            <option vlaue="ab_pos">এবি পজিটিভ  </option>
+                                                            <option vlaue="ab_neg">এবি নেগেটিভ </option>
+                                                            <option vlaue="o_pos">ও পজিটিভ </option>
+                                                            <option vlaue="o_neg">ও নেগেটিভ </option>
+                                                            <option vlaue="unknown">অন্যান্য </option>
                                                         </select>
                                                         @error('blood')
                                                         <span class="invalid-feedback" role="alert">
@@ -210,11 +210,11 @@
                                                             </fieldset>
                                                         </div>
                                                     </div>
-{{--                                                    <button type="submit" class="button-68" role="button">--}}
-{{--                                                        <a href="{{route('login')}}" >Login</a>--}}
-{{--                                                    </button>--}}
+                                                    {{--                                                    <button type="submit" class="button-68" role="button">--}}
+                                                    {{--                                                        <a href="{{route('login')}}" >Login</a>--}}
+                                                    {{--                                                    </button>--}}
 
-                                                    <button type="submit" class="button-68" role="button">Register</button>
+                                                    <button type="submit" class="button-68" role="button">রেজিস্টার </button>
 
 
                                                 </form>
@@ -231,9 +231,17 @@
                                                 <img src="https://www.pngrepo.com/png/95333/512/avatar.png" width="250px"/>
                                             </label>
                                             <br/>
-                                            <span >click to insert image</span>
+                                            <span >এখানে ক্লিক করে ছবি সংযুক্ত করুন </span>
 
                                             <input id="file-input" type="file" name="picture" style="display: none"/>
+                                            <br/>
+                                            <hr/>
+                                            <br/>
+
+                                            <label for="file-input">
+                                                <img src="https://i.ibb.co/JCgV84S/IMG-20211123-WA0033.jpg" width="350px"/>
+                                            </label>
+
                                             @error('picture')
                                             <span class="invalid-feedback" role="alert">
                                                                 <strong>{{ $message }}</strong>
@@ -242,12 +250,12 @@
 
                                         </div>
 
-{{--                                        <input type="file" id="icon-pic" class="form-control" name="picture">--}}
+                                        {{--                                        <input type="file" id="icon-pic" class="form-control" name="picture">--}}
 
 
                                     </div>
 
-                                    <hr/>
+
 
                                 </div>
                             </div>
@@ -270,28 +278,27 @@
                             <div class="screen-body">
                                 <div class="screen-body-item left">
                                     <div class="app-title">
-                                        <span>CONTACT</span>
-                                        <span>US</span>
+                                        <span style="color: green">যোগাযোগ </span>
                                     </div>
-                                    <div class="app-contact">#</div>
+
                                 </div>
                                 <div class="screen-body-item">
                                     <div class="app-form">
                                         <div class="app-form-group">
-                                            <input class="app-form-control" placeholder="NAME" value="">
+                                            <input class="app-form-control text-dark" placeholder="নাম " value="">
                                         </div>
                                         <div class="app-form-group">
-                                            <input class="app-form-control" placeholder="EMAIL">
+                                            <input class="app-form-control text-dark" placeholder="ইমেইল ">
                                         </div>
                                         <div class="app-form-group">
-                                            <input class="app-form-control" placeholder="CONTACT NO">
+                                            <input class="app-form-control text-dark" placeholder="মোবাইল ">
                                         </div>
                                         <div class="app-form-group message">
-                                            <input class="app-form-control" placeholder="MESSAGE">
+                                            <input class="app-form-control text-dark" placeholder="ম্যাসেজ ">
                                         </div>
                                         <div class="app-form-group buttons">
-                                            <button class="app-form-button">CANCEL</button>
-                                            <button class="app-form-button">SEND</button>
+                                            <button class=" button-68">বাদ দিন </button>
+                                            <button class=" button-68">সাবমিট </button>
                                         </div>
                                     </div>
                                 </div>

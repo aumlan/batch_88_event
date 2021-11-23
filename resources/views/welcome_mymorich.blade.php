@@ -2,7 +2,7 @@
 @section('content')
     <!-- Banner Area Start-->
 
-{{--    @include('layouts.frontend.featured_banner')--}}
+    {{--    @include('layouts.frontend.featured_banner')--}}
 
     <!-- Banner Area End -->
 
@@ -28,56 +28,56 @@
 
     <hr style="width: 75%">
 
-{{--        <div class="container">--}}
-{{--            <div class="row  mb-4 justify-content-center">--}}
-{{--                <div class="col-lg-3">--}}
-{{--                    <div class="section-title fancy-border">--}}
-{{--                        <span class="option_highlight">Gallery</span>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+    {{--        <div class="container">--}}
+    {{--            <div class="row  mb-4 justify-content-center">--}}
+    {{--                <div class="col-lg-3">--}}
+    {{--                    <div class="section-title fancy-border">--}}
+    {{--                        <span class="option_highlight">Gallery</span>--}}
+    {{--                    </div>--}}
+    {{--                </div>--}}
+    {{--            </div>--}}
 
-{{--            <div class="row">--}}
-{{--                <div class="row">--}}
-{{--                    @foreach ($gallery as $g)--}}
+    {{--            <div class="row">--}}
+    {{--                <div class="row">--}}
+    {{--                    @foreach ($gallery as $g)--}}
 
-{{--                        <div class="col-lg-3 col-md-4 col-xs-6 thumb_custom">--}}
-{{--                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""--}}
-{{--                               data-image="/images/sliders/{{ $g->image}}"--}}
-{{--                               data-target="#image-gallery">--}}
-{{--                                <img class="img-thumbnail"--}}
-{{--                                     src="/images/sliders/{{ $g->image}}"--}}
-{{--                                     alt="Another alt text"--}}
-{{--                                     style="object-fit: contain;width: 100%;height: 100%;}">--}}
-{{--                            </a>--}}
-{{--                        </div>--}}
-{{--                    @endforeach--}}
-{{--                </div>--}}
+    {{--                        <div class="col-lg-3 col-md-4 col-xs-6 thumb_custom">--}}
+    {{--                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""--}}
+    {{--                               data-image="/images/sliders/{{ $g->image}}"--}}
+    {{--                               data-target="#image-gallery">--}}
+    {{--                                <img class="img-thumbnail"--}}
+    {{--                                     src="/images/sliders/{{ $g->image}}"--}}
+    {{--                                     alt="Another alt text"--}}
+    {{--                                     style="object-fit: contain;width: 100%;height: 100%;}">--}}
+    {{--                            </a>--}}
+    {{--                        </div>--}}
+    {{--                    @endforeach--}}
+    {{--                </div>--}}
 
 
-{{--                <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">--}}
-{{--                    <div class="modal-dialog modal-lg">--}}
-{{--                        <div class="modal-content">--}}
-{{--                            <div class="modal-header">--}}
-{{--                                <h4 class="modal-title" id="image-gallery-title"></h4>--}}
-{{--                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>--}}
-{{--                                </button>--}}
-{{--                            </div>--}}
-{{--                            <div class="modal-body">--}}
-{{--                                <img id="image-gallery-image" class="img-responsive col-md-12" src="">--}}
-{{--                            </div>--}}
-{{--                            <div class="modal-footer">--}}
-{{--                                <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>--}}
-{{--                                </button>--}}
+    {{--                <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">--}}
+    {{--                    <div class="modal-dialog modal-lg">--}}
+    {{--                        <div class="modal-content">--}}
+    {{--                            <div class="modal-header">--}}
+    {{--                                <h4 class="modal-title" id="image-gallery-title"></h4>--}}
+    {{--                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>--}}
+    {{--                                </button>--}}
+    {{--                            </div>--}}
+    {{--                            <div class="modal-body">--}}
+    {{--                                <img id="image-gallery-image" class="img-responsive col-md-12" src="">--}}
+    {{--                            </div>--}}
+    {{--                            <div class="modal-footer">--}}
+    {{--                                <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>--}}
+    {{--                                </button>--}}
 
-{{--                                <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>--}}
-{{--                                </button>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
+    {{--                                <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>--}}
+    {{--                                </button>--}}
+    {{--                            </div>--}}
+    {{--                        </div>--}}
+    {{--                    </div>--}}
+    {{--                </div>--}}
+    {{--            </div>--}}
+    {{--        </div>--}}
 
 
 
@@ -85,40 +85,39 @@
     <section class="product-area pd-top-35 mb-5">
 
         <div class="container">
-{{--            <div class="row  mb-4 justify-content-center">--}}
-{{--                <div class="col-lg-3">--}}
-{{--                    <div class="section-title fancy-border">--}}
-{{--                        <span class="option_highlight">Contact Us</span>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+            {{--            <div class="row  mb-4 justify-content-center">--}}
+            {{--                <div class="col-lg-3">--}}
+            {{--                    <div class="section-title fancy-border">--}}
+            {{--                        <span class="option_highlight">Contact Us</span>--}}
+            {{--                    </div>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
             <div class="screen">
 
                 <div class="screen-body">
                     <div class="screen-body-item left">
                         <div class="app-title">
-                            <span>CONTACT</span>
-                            <span>US</span>
+                            <span style="color: green">যোগাযোগ </span>
                         </div>
-                        <div class="app-contact">#</div>
+
                     </div>
                     <div class="screen-body-item">
                         <div class="app-form">
                             <div class="app-form-group">
-                                <input class="app-form-control" placeholder="NAME" value="">
+                                <input class="app-form-control text-dark" placeholder="নাম " value="">
                             </div>
                             <div class="app-form-group">
-                                <input class="app-form-control" placeholder="EMAIL">
+                                <input class="app-form-control text-dark" placeholder="ইমেইল ">
                             </div>
                             <div class="app-form-group">
-                                <input class="app-form-control" placeholder="CONTACT NO">
+                                <input class="app-form-control text-dark" placeholder="মোবাইল ">
                             </div>
                             <div class="app-form-group message">
-                                <input class="app-form-control" placeholder="MESSAGE">
+                                <input class="app-form-control text-dark" placeholder="ম্যাসেজ ">
                             </div>
                             <div class="app-form-group buttons">
-                                <button class="app-form-button">CANCEL</button>
-                                <button class="app-form-button">SEND</button>
+                                <button class=" button-68">বাদ দিন </button>
+                                <button class=" button-68">সাবমিট </button>
                             </div>
                         </div>
                     </div>
@@ -128,14 +127,14 @@
 
 
     </section>
-{{--    @include('layouts.frontend.third_banner')--}}
+    {{--    @include('layouts.frontend.third_banner')--}}
 
     <!-- arrival-Area End-->
 
 
 
 
-{{--    @include('layouts.frontend.desktop.parts.service')--}}
+    {{--    @include('layouts.frontend.desktop.parts.service')--}}
 
 @endsection
 @section('js')

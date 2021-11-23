@@ -44,28 +44,27 @@
                     <div class="screen-body">
                         <div class="screen-body-item left">
                             <div class="app-title">
-                                <span>CONTACT</span>
-                                <span>US</span>
+                                <span style="color: green">যোগাযোগ </span>
                             </div>
-                            <div class="app-contact">#</div>
+
                         </div>
                         <div class="screen-body-item">
                             <div class="app-form">
                                 <div class="app-form-group">
-                                    <input class="app-form-control" placeholder="NAME" value="">
+                                    <input class="app-form-control text-dark" placeholder="নাম " value="">
                                 </div>
                                 <div class="app-form-group">
-                                    <input class="app-form-control" placeholder="EMAIL">
+                                    <input class="app-form-control text-dark" placeholder="ইমেইল ">
                                 </div>
                                 <div class="app-form-group">
-                                    <input class="app-form-control" placeholder="CONTACT NO">
+                                    <input class="app-form-control text-dark" placeholder="মোবাইল ">
                                 </div>
                                 <div class="app-form-group message">
-                                    <input class="app-form-control" placeholder="MESSAGE">
+                                    <input class="app-form-control text-dark" placeholder="ম্যাসেজ ">
                                 </div>
                                 <div class="app-form-group buttons">
-                                    <button class="app-form-button">CANCEL</button>
-                                    <button class="app-form-button">SEND</button>
+                                    <button class=" button-68">বাদ দিন </button>
+                                    <button class=" button-68">সাবমিট </button>
                                 </div>
                             </div>
                         </div>

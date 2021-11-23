@@ -13,16 +13,16 @@
         </div>
         <hr>
         <div class="row d-flex">
-{{--            <div class="col-md-12">--}}
+            {{--            <div class="col-md-12">--}}
 
-{{--                <p style="font-size: 1.2rem"><ion-icon name="play-circle"></ion-icon><span class="ml-2" style="font-size: 1.5rem">Our Vision</span></p>--}}
-{{--                <br/>--}}
-{{--                <p class="text-justify term-conditions mb-2" >--}}
-{{--                    Our vision is to be regarded as the firm that provides unique--}}
-{{--                    majestic fragrance and flavour attributes that represent the distinct--}}
-{{--                    style of each individual character, event and experience.</p>--}}
+            {{--                <p style="font-size: 1.2rem"><ion-icon name="play-circle"></ion-icon><span class="ml-2" style="font-size: 1.5rem">Our Vision</span></p>--}}
+            {{--                <br/>--}}
+            {{--                <p class="text-justify term-conditions mb-2" >--}}
+            {{--                    Our vision is to be regarded as the firm that provides unique--}}
+            {{--                    majestic fragrance and flavour attributes that represent the distinct--}}
+            {{--                    style of each individual character, event and experience.</p>--}}
 
-{{--            </div>--}}
+            {{--            </div>--}}
             <div class="col-md-12 pt-5 text-center">
                 <img src="/site_image/WA0001.jpg" alt="Girl in a jacket" width="400" >
                 <img src="/site_image/WA0005.jpg" alt="Girl in a jacket" width="400" >
@@ -45,28 +45,27 @@
                     <div class="screen-body">
                         <div class="screen-body-item left">
                             <div class="app-title">
-                                <span>CONTACT</span>
-                                <span>US</span>
+                                <span style="color: green">যোগাযোগ </span>
                             </div>
-                            <div class="app-contact">#</div>
+
                         </div>
                         <div class="screen-body-item">
                             <div class="app-form">
                                 <div class="app-form-group">
-                                    <input class="app-form-control" placeholder="NAME" value="">
+                                    <input class="app-form-control text-dark" placeholder="নাম " value="">
                                 </div>
                                 <div class="app-form-group">
-                                    <input class="app-form-control" placeholder="EMAIL">
+                                    <input class="app-form-control text-dark" placeholder="ইমেইল ">
                                 </div>
                                 <div class="app-form-group">
-                                    <input class="app-form-control" placeholder="CONTACT NO">
+                                    <input class="app-form-control text-dark" placeholder="মোবাইল ">
                                 </div>
                                 <div class="app-form-group message">
-                                    <input class="app-form-control" placeholder="MESSAGE">
+                                    <input class="app-form-control text-dark" placeholder="ম্যাসেজ ">
                                 </div>
                                 <div class="app-form-group buttons">
-                                    <button class="app-form-button">CANCEL</button>
-                                    <button class="app-form-button">SEND</button>
+                                    <button class=" button-68">বাদ দিন </button>
+                                    <button class=" button-68">সাবমিট </button>
                                 </div>
                             </div>
                         </div>
