@@ -42,12 +42,13 @@
                                                     <div class="form-label-group d-flex mb-3">
                                                         <label style="width: 30%">সদস্যের নাম</label>
                                                         <input id="inputName" value="{{ old('name') }}" name="name" autocomplete="name" autofocus class="form-control @error('name') is-invalid @enderror"  required>
-                                                    </div>
-                                                    @error('name')
-                                                    <span class="invalid-feedback" role="alert">
+                                                        @error('name')
+                                                        <span class="invalid-feedback" role="alert">
                                                             <strong>{{ $message }}</strong>
                                                         </span>
-                                                    @enderror
+                                                        @enderror
+                                                    </div>
+
                                                     <div class="form-label-group d-flex mb-3">
                                                         <label style="width: 30%">ইমেইল</label>
                                                         <input type="email" id="inputEmail" class="form-control" @error('email') is-invalid @enderror name="email" value="{{ old('email') }}"  required autocomplete="email">
@@ -67,8 +68,6 @@
                                                             </span>
                                                         @enderror
                                                     </div>
-
-
 
                                                     <div class="form-label-group d-flex mb-3">
                                                         <label style="width: 30%">বিদ্যালয়ের নাম</label>
@@ -179,9 +178,6 @@
                                                         @enderror
                                                     </div>
 
-
-
-
                                                     <div class="form-label-group d-flex mb-3">
                                                         <label style="width: 30%">পাসওয়ার্ড</label>
                                                         <input type="password" id="inputPassword" class="form-control @error('password') is-invalid @enderror"  name="password" required autocomplete="new-password">
@@ -191,10 +187,12 @@
                                                             </span>
                                                         @enderror
                                                     </div>
+
                                                     <div class="form-label-group d-flex mb-3">
                                                         <label style="width: 30%">কনফার্ম পাসওয়ার্ড</label>
                                                         <input type="password" id="inputConfPassword" name="password_confirmation" class="form-control"  required autocomplete="new-password">
                                                     </div>
+
                                                     <div class="form-group row mb-2">
                                                         <div class="col-12">
                                                             <fieldset class="checkbox">

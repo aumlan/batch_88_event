@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>@yield('title','My Morich')</title>
+    <title>@yield('title','Bangladesh 88')</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     @yield('meta')
@@ -31,9 +31,9 @@
 <body>
     @yield('content')
     <!-- topBar end -->
-    @include('layouts.frontend.mobile.parts.bottom_navigation')
+{{--    @include('layouts.frontend.mobile.parts.bottom_navigation')--}}
 {{--    <div class="space60"></div>--}}
-    <div class="space60"></div>
+{{--    <div class="space60"></div>--}}
     <!-- JS here -->
     <script src="{{asset('Frontend/mobile/js/vendor/jquery-1.12.4.min.js')}}"></script>
     <script src="{{asset('Frontend/mobile/js/popper.min.js')}}"></script>

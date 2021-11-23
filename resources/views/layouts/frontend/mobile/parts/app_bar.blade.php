@@ -4,7 +4,7 @@
     </div>
     <a href="{{url('/')}}">
         <div class="MobileLogo">
-            <img src="{{asset('site_image/logo.png')}}" alt="">&nbsp;
+{{--            <img src="{{asset('site_image/logo.png')}}" alt="">&nbsp;--}}
         </div>
     </a>
     <div class="rightTopIcon"></div>
@@ -15,49 +15,57 @@
             <i class="fas fa-times"></i>
         </div>
         <ul>
-            @guest
-                <div class="container">
+{{--            @guest--}}
+{{--                <div class="container">--}}
 
-                    <a class="text-dark" href="{{ route('login') }}">
-                        <div class="icon-holder d-flex">
-                            <ion-icon name="people-outline" style="font-size: 20px;"></ion-icon>
-                            <p class="ml-2 mb-2"> Login </p>
-                        </div>
-                    </a>
-                </div>
-
-
-            @else
-                <div class="container d-flex justify-content-between">
-                    <div >
-                        <a class="text-dark" href="{{ route('login') }}">
-                            <div class="icon-holder d-flex">
-                                <ion-icon name="people-outline" style="font-size: 20px;"></ion-icon>
-                                <p class="ml-2 mb-2"> {{ auth()->user()->name }} </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div>
-                        <form action="{{ url('/logout')}}" method="POST">
-                            @csrf
-                            <a href="{{ route('logout') }}" >
-                                <i class="fas fa-sign-out-alt mr-2"></i>
-                            </a>
-                        </form>
-                    </div>
-
-                </div>
-            @endguest
-
-                <li><a class="side_menu_active" href="{{ url('/') }}">Home</a></li>
-                <li><a  href="{{ url('/about') }}">About Us</a></li>
+{{--                    <a class="text-dark" href="{{ route('login') }}">--}}
+{{--                        <div class="icon-holder d-flex">--}}
+{{--                            <ion-icon name="people-outline" style="font-size: 20px;"></ion-icon>--}}
+{{--                            <p class="ml-2 mb-2"> Login </p>--}}
+{{--                        </div>--}}
+{{--                    </a>--}}
+{{--                </div>--}}
 
 
-                @foreach($global_categories as $category)
-                    <li class=" text-uppercase"><a href={{ route('category.products', [$category->id, $category->name] ) }}> {{ $category->name }} </a></li>
-                @endforeach
+{{--            @else--}}
+{{--                <div class="container d-flex justify-content-between">--}}
+{{--                    <div >--}}
+{{--                        <a class="text-dark" href="{{ route('login') }}">--}}
+{{--                            <div class="icon-holder d-flex">--}}
+{{--                                <ion-icon name="people-outline" style="font-size: 20px;"></ion-icon>--}}
+{{--                                <p class="ml-2 mb-2"> {{ auth()->user()->name }} </p>--}}
+{{--                            </div>--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
+{{--                    <div>--}}
+{{--                        <form action="{{ url('/logout')}}" method="POST">--}}
+{{--                            @csrf--}}
+{{--                            <a href="{{ route('logout') }}" >--}}
+{{--                                <i class="fas fa-sign-out-alt mr-2"></i>--}}
+{{--                            </a>--}}
+{{--                        </form>--}}
+{{--                    </div>--}}
 
-                <li><a  href="{{ url('/contact-us') }}">Contact Us</a></li>
+{{--                </div>--}}
+{{--            @endguest--}}
+
+{{--                <li><a class="side_menu_active" href="{{ url('/') }}">Home</a></li>--}}
+{{--                <li><a  href="{{ url('/about') }}">About Us</a></li>--}}
+
+            <li class=" text-uppercase mr-3"  ><a class="side_menu_active" style="color:#609513" href={{ route('welcome') }}> হোম  </a></li>
+            <li class=" text-uppercase mr-3"  ><a style="color:#FF6702" href={{ route('charity.forum') }}> চ্যারিটি ফোরাম </a></li>
+            <li class=" text-uppercase mr-3"  ><a style="color:#F5322D" href={{ route('education.forum') }}> শিক্ষা ফোরাম </a></li>
+            <li class=" text-uppercase mr-3"  ><a style="color:#0B8447" href={{ route('environment.forum') }}> পরিবেশ ফোরাম </a></li>
+            <li class=" text-uppercase mr-3"  ><a style="color:#8869DE" href={{ route('health.forum') }}> স্বাস্থ্য ফোরাম  </a></li>
+            <li class=" text-uppercase mr-3"  ><a style="color:#F5322D" href={{ route('cultural.forum') }}> কালচারাল ফোরাম </a></li>
+            <li class=" text-uppercase mr-3"  ><a style="color:#FF6702" href={{ route('media.forum') }}> মিডিয়া ফোরাম </a></li>
+
+
+{{--                @foreach($global_categories as $category)--}}
+{{--                    <li class=" text-uppercase"><a href={{ route('category.products', [$category->id, $category->name] ) }}> {{ $category->name }} </a></li>--}}
+{{--                @endforeach--}}
+
+{{--                <li><a  href="{{ url('/contact-us') }}">Contact Us</a></li>--}}
 
 
 

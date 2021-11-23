@@ -9,227 +9,58 @@
                 </div>
             @endforeach
         </div>
-    </div>
-
-    <div class="cardSection">
-        <div class="cardSectionTitle">
-            <div class="titleText">
-               <p>{{ __('frontend.popularBrands') }}</p>
-            </div>
-            <div class="titleIcon">
-                <span>{{ __('frontend.seeMore') }}<i class="fas fa-arrow-right"></i></span>
-            </div>
-        </div>
-
-        <div class="BrandsCard">
-            <div class="brands">
-                @foreach ($brands as $brand)
-                    <a href="{{ route('brand.products', [$brand->id, $brand->name] ) }}" class="text-dark">
-                        <div class="brand">
-                            <div class="brandIcon">
-                                <img src="{{ asset($brand->icon) }}" alt="" srcset="">
-                            </div>
-                            <div class="brandName">
-                                <p>{{ $brand->name }}</p>
-                            </div>
-                        </div>
-                    </a>
-                @endforeach
-
-            </div>
+        <div class="hero_register_btn">
+            <a  href={{ route('register') }} class="button-68" style="font-size: 11px">রেজিস্ট্রেশান এর জন্য ক্লিক করুন </a>
         </div>
     </div>
 
-    @if (count($new_arrivals) > 0)
-        <div class="cardSection">
-            <div class="cardSectionTitle">
-                <div class="titleText">
-                    <p>{{ __('frontend.newArrival') }} </p>
-                </div>
-                <div class="titleIcon">
-                    <a href="#" class="text-dark"><span>{{ __('frontend.seeMore') }}<i class="fas fa-arrow-right"></i></span></a>
-                </div>
-            </div>
-            <div class="cardContentMobile owl-carousel">
-                @foreach ($new_arrivals as $product)
-                    <a href="{{ route('product.details', [$product->id, $product->slug]) }}">
-                        <div class="mobileCard">
-                            <div class="mobileCardImg">
-                                @if (count($product->productImage) > 0)
-                                    <img src="{{ thumbnail($product->productImage[0]->image) }}" alt="" srcset="">
-                                @endif
-                            </div>
-                            <div class="mobileCardDetails">
-                                <div class="d-flex justify-content-between">
 
-                                    @if ($product->discount_price)
-                                        <del>
-                                            <p class="mb-0 font-weight-bold" style="color: #8a8a8a">AED
-                                                {{ $product->sales_price }}</p>
-                                        </del>
-                                        <p class="mb-0 font-weight-bold template_primary_color">AED
-                                            {{ $product->discount_price }}</p>
-                                    @else
-                                        @if($currencies->selected_currency == 'usd')
-                                            <p class="mb-0 font-weight-bold template_primary_color">$ {{ $product->sales_price }}</p>
-                                        @elseif($currencies->selected_currency == 'euro')
-                                            <p class="mb-0 font-weight-bold template_primary_color">€ {{ $product->sales_price_euro }}</p>
-                                        @elseif($currencies->selected_currency == 'aed')
-                                            <p class="mb-0 font-weight-bold template_primary_color">AED {{ $product->sales_price_aed }}</p>
-                                        @endif
-                                    @endif
-                                </div>
-                                <p class="template_dark_color font-weight-bold">
-                                    {{ Str::limit($product->name, 15, '...') }}</p>
-                            </div>
+
+    <section class="product-area pd-top-35 mt-5 mb-4">
+
+        <div class="container">
+            {{--            <div class="row  mb-4 justify-content-center">--}}
+            {{--                <div class="col-lg-3">--}}
+            {{--                    <div class="section-title fancy-border">--}}
+            {{--                        <span class="option_highlight">Contact Us</span>--}}
+            {{--                    </div>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
+            <div class="screen">
+
+                <div class="screen-body">
+                    <div class="screen-body-item left">
+                        <div class="app-title">
+                            <span style="color: green">যোগাযোগ </span>
                         </div>
-                    </a>
-                @endforeach
-            </div>
-        </div>
-    @endif
 
-    @if (count($featured_products) > 0)
-        <div class="cardSection">
-            <div class="cardSectionTitle">
-                <div class="titleText">
-{{--                    <p>{{ __('frontend.specialOffers') }}</p>--}}
-                    <p>Featured Products</p>
-                </div>
-                <div class="titleIcon">
-                    <a href="#" class="text-dark"><span>{{ __('frontend.seeMore') }}<i class="fas fa-arrow-right"></i></span></a>
-                </div>
-            </div>
-            <div class="cardContentMobile owl-carousel">
-                @foreach ($featured_products as $product)
-                    <a href="{{ route('product.details', [$product->id, $product->slug]) }}">
-                        <div class="mobileCard">
-                            <div class="mobileCardImg">
-                                @if (count($product->productImage) > 0)
-                                    <img src="{{ thumbnail($product->productImage[0]->image) }}" alt="" srcset="">
-                                @endif
-                            </div>
-                            <div class="mobileCardDetails">
-                                <div class="d-flex justify-content-between">
-
-                                    @if ($product->discount_price)
-                                        <del>
-                                            <p class="mb-0 font-weight-bold" style="color: #8a8a8a">AED
-                                                {{ $product->sales_price_aed }}</p>
-                                        </del>
-                                        <p class="mb-0 font-weight-bold template_primary_color">AED
-                                            {{ $product->discount_price }}</p>
-                                    @else
-                                        <p class="mb-0 font-weight-bold template_primary_color">AED {{ $product->sales_price_aed }}</p>
-                                    @endif
-                                </div>
-                                <p class="template_dark_color font-weight-bold">
-                                    {{ Str::limit($product->name, 15, '...') }}</p>
-                            </div>
-                            {{-- <div class="mobile_carts" >
-                                <div class="cart_icon">
-                                    <ion-icon name="cart-outline"></ion-icon>
-                                </div>
-                            </div> --}}
-                        </div>
-                    </a>
-                @endforeach
-            </div>
-        </div>
-    @endif
-
-    @if (count($best_selling) > 0)
-        <div class="cardSection">
-            <div class="cardSectionTitle">
-                <div class="titleText">
-                    <p>{{ __('frontend.bestSelling') }}</p>
-                </div>
-                <div class="titleIcon">
-                    <a href="#" class="text-dark"><span>{{ __('frontend.seeMore') }} <i class="fas fa-arrow-right"></i></span></a>
-                </div>
-            </div>
-            <div class="cardContentMobile owl-carousel">
-                @foreach ($best_selling as $product)
-                    <a href="{{ route('product.details', [$product->id, $product->slug]) }}">
-                        <div class="mobileCard">
-                            <div class="mobileCardImg">
-                                @if (count($product->productImage) > 0)
-                                    <img src="{{ thumbnail($product->productImage[0]->image) }}" alt="" srcset="">
-                                @endif
-                            </div>
-                            <div class="mobileCardDetails">
-                                <div class="d-flex justify-content-between">
-
-                                    @if ($product->discount_price)
-                                        <del>
-                                            <p class="mb-0 font-weight-bold" style="color: #8a8a8a">AED
-                                                {{ $product->sales_price }}</p>
-                                        </del>
-                                        <p class="mb-0 font-weight-bold template_primary_color">AED
-                                            {{ $product->discount_price }}</p>
-                                    @else
-                                        <p class="mb-0 font-weight-bold template_primary_color">AED
-                                            {{ $product->sales_price }}</p>
-                                    @endif
-                                </div>
-                                <p class="template_dark_color font-weight-bold">
-                                    {{ Str::limit($product->name, 15, '...') }}</p>
-                            </div>
-                        </div>
-                    </a>
-                @endforeach
-            </div>
-        </div>
-    @endif
-
-    @if (count($top_reacted) > 0)
-<div class="cardSection">
-    <div class="cardSectionTitle">
-        <div class="titleText">
-            <p>Top Reacted</p>
-        </div>
-        <div class="titleIcon">
-            <a href="#" class="text-dark"><span>{{ __('frontend.seeMore') }}<i class="fas fa-arrow-right"></i></span></a>
-        </div>
-    </div>
-    <div class="cardContentMobile owl-carousel">
-        @foreach ($top_reacted as $product)
-            <a href="{{ route('product.details', [$product->id, $product->slug]) }}">
-                <div class="mobileCard">
-                    <div class="mobileCardImg">
-                        @if (count($product->productImage) > 0)
-                            <img src="{{ thumbnail($product->productImage[0]->image) }}" alt="" srcset="">
-                        @endif
                     </div>
-                    <div class="mobileCardDetails">
-                        <div class="d-flex justify-content-between">
-
-                            @if ($product->discount_price)
-                                <del>
-                                    <p class="mb-0 font-weight-bold" style="color: #8a8a8a">AED
-                                        {{ $product->sales_price }}</p>
-                                </del>
-                                <p class="mb-0 font-weight-bold template_primary_color">AED
-                                    {{ $product->discount_price }}</p>
-                            @else
-                                @if($currencies->selected_currency == 'usd')
-                                    <p class="mb-0 font-weight-bold template_primary_color">$ {{ $product->sales_price }}</p>
-                                @elseif($currencies->selected_currency == 'euro')
-                                    <p class="mb-0 font-weight-bold template_primary_color">€ {{ $product->sales_price_euro }}</p>
-                                @elseif($currencies->selected_currency == 'aed')
-                                    <p class="mb-0 font-weight-bold template_primary_color">AED {{ $product->sales_price_aed }}</p>
-                                @endif
-                            @endif
+                    <div class="screen-body-item">
+                        <div class="app-form">
+                            <div class="app-form-group">
+                                <input class="app-form-control text-dark" placeholder="নাম " value="">
+                            </div>
+                            <div class="app-form-group">
+                                <input class="app-form-control text-dark" placeholder="ইমেইল ">
+                            </div>
+                            <div class="app-form-group">
+                                <input class="app-form-control text-dark" placeholder="মোবাইল ">
+                            </div>
+                            <div class="app-form-group message">
+                                <input class="app-form-control text-dark" placeholder="ম্যাসেজ ">
+                            </div>
+                            <div class="app-form-group buttons">
+                                <button class=" button-68">বাদ দিন </button>
+                                <button class=" button-68">সাবমিট </button>
+                            </div>
                         </div>
-                        <p class="template_dark_color font-weight-bold">
-                            {{ Str::limit($product->name, 15, '...') }}</p>
                     </div>
                 </div>
-            </a>
-        @endforeach
-    </div>
-</div>
-@endif
+            </div>
+        </div>
+
+
+    </section>
 
 @endsection
 @push('js')
