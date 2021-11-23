@@ -19,12 +19,15 @@
                 </div>
             @endforeach
         </div>
+        <div class="hero_register_btn">
+            <a href={{ route('register') }} class="button-68" >রেজিস্ট্রেশান এর জন্য ক্লিক করুন </a>
+        </div>
+
     </div>
 
 
     <hr style="width: 75%">
 
-{{--    <section class="product-area text-center pd-top-35">--}}
 {{--        <div class="container">--}}
 {{--            <div class="row  mb-4 justify-content-center">--}}
 {{--                <div class="col-lg-3">--}}
@@ -33,131 +36,62 @@
 {{--                    </div>--}}
 {{--                </div>--}}
 {{--            </div>--}}
-{{--            <div class="row justify-content-center">--}}
-{{--                @foreach ($top_reacted as $prd)--}}
-{{--                    <div class="col-lg-3 col-sm-6">--}}
-{{--                        <div class="single-product-wrap">--}}
-{{--                            <div class="thumb">--}}
-{{--                                @if (count($prd->productImage) > 0)--}}
-{{--                                    <img src="{{ thumbnail($prd->productImage[0]->image) }}" alt="img" width="200px" style="object-fit: contain;width: 100%;height: 100%;}">--}}
-{{--                                @endif--}}
 
-{{--                                <a class="btn btn-base bg-main" href="{{ route('product.details', [$prd->id, $prd->slug]) }}"><span class="border-1"></span><span--}}
-{{--                                        class="border-2"></span>QUICK VIEW</a>--}}
-{{--                                <ul>--}}
-{{--                                    <li><a href="#"><i class="far fa-heart"></i></a></li>--}}
-{{--                                    <li><a href="#"><img src="{{ asset('FrontendAsset/img/icon/git-compare.png') }}"--}}
-{{--                                                         alt="img"></a></li>--}}
-{{--                                    <li><a href="#"><img src="{{ asset('FrontendAsset/img/icon/shopping-bag.png') }}"--}}
-{{--                                                         alt="img"></a></li>--}}
-{{--                                </ul>--}}
+{{--            <div class="row">--}}
+{{--                <div class="row">--}}
+{{--                    @foreach ($gallery as $g)--}}
+
+{{--                        <div class="col-lg-3 col-md-4 col-xs-6 thumb_custom">--}}
+{{--                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""--}}
+{{--                               data-image="/images/sliders/{{ $g->image}}"--}}
+{{--                               data-target="#image-gallery">--}}
+{{--                                <img class="img-thumbnail"--}}
+{{--                                     src="/images/sliders/{{ $g->image}}"--}}
+{{--                                     alt="Another alt text"--}}
+{{--                                     style="object-fit: contain;width: 100%;height: 100%;}">--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                    @endforeach--}}
+{{--                </div>--}}
+
+
+{{--                <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">--}}
+{{--                    <div class="modal-dialog modal-lg">--}}
+{{--                        <div class="modal-content">--}}
+{{--                            <div class="modal-header">--}}
+{{--                                <h4 class="modal-title" id="image-gallery-title"></h4>--}}
+{{--                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>--}}
+{{--                                </button>--}}
 {{--                            </div>--}}
-{{--                            <div class="wrap-details">--}}
-{{--                                <span class="categories">{{ $prd->category ? $prd->category->name : '' }}</span>--}}
-{{--                                <h6><a--}}
-{{--                                        href="{{ route('product.details', [$prd->id, $prd->slug]) }}">--}}
-{{--                                        <span style="color: #ff8e01">{{ $prd->name }}</span>--}}
-{{--                                    </a>--}}
-{{--                                </h6>--}}
-{{--                                <div class="star-rating">--}}
-{{--                                    <span><i class="la la-star"></i></span>--}}
-{{--                                    <span><i class="la la-star"></i></span>--}}
-{{--                                    <span><i class="la la-star"></i></span>--}}
-{{--                                    <span><i class="la la-star"></i></span>--}}
-{{--                                    <span><i class="la la-star"></i></span>--}}
-{{--                                </div>--}}
-{{--                                <span--}}
-{{--                                    class="price">AED{{ $prd->sales_price_aed }}</span>--}}
+{{--                            <div class="modal-body">--}}
+{{--                                <img id="image-gallery-image" class="img-responsive col-md-12" src="">--}}
+{{--                            </div>--}}
+{{--                            <div class="modal-footer">--}}
+{{--                                <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>--}}
+{{--                                </button>--}}
+
+{{--                                <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>--}}
+{{--                                </button>--}}
 {{--                            </div>--}}
 {{--                        </div>--}}
 {{--                    </div>--}}
-{{--                @endforeach--}}
-
+{{--                </div>--}}
 {{--            </div>--}}
 {{--        </div>--}}
-{{--    </section>--}}
 
 
 
-    <section class="product-area text-center pd-top-35 mb-5">
-
-{{--        <div class="container_custom">--}}
-{{--            @foreach ($gallery as $g)--}}
-{{--                <div class="box_custom ">--}}
-{{--                    <img src="/images/sliders/{{ $g->image}}">--}}
-{{--                    <span>{{ $g->slider_title }}</span>--}}
-{{--                </div>--}}
-{{--            @endforeach--}}
-{{--        </div>--}}
-
-        <div class="container">
-            <div class="row  mb-4 justify-content-center">
-                <div class="col-lg-3">
-                    <div class="section-title fancy-border">
-                        <span class="option_highlight">Gallery</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="row">
-                    @foreach ($gallery as $g)
-
-                        <div class="col-lg-3 col-md-4 col-xs-6 thumb_custom">
-                            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
-                               data-image="/images/sliders/{{ $g->image}}"
-                               data-target="#image-gallery">
-                                <img class="img-thumbnail"
-                                     src="/images/sliders/{{ $g->image}}"
-                                     alt="Another alt text"
-                                     style="object-fit: contain;width: 100%;height: 100%;}">
-                            </a>
-                        </div>
-                    @endforeach
-                </div>
-
-
-                <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title" id="image-gallery-title"></h4>
-                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <img id="image-gallery-image" class="img-responsive col-md-12" src="">
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
-                                </button>
-
-                                <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-    </section>
-
-    <hr style="width: 75%">
 
     <section class="product-area pd-top-35 mb-5">
 
         <div class="container">
-            <div class="row  mb-4 justify-content-center">
-                <div class="col-lg-3">
-                    <div class="section-title fancy-border">
-                        <span class="option_highlight">Contact Us</span>
-                    </div>
-                </div>
-            </div>
+{{--            <div class="row  mb-4 justify-content-center">--}}
+{{--                <div class="col-lg-3">--}}
+{{--                    <div class="section-title fancy-border">--}}
+{{--                        <span class="option_highlight">Contact Us</span>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
             <div class="screen">
 
                 <div class="screen-body">
@@ -166,7 +100,7 @@
                             <span>CONTACT</span>
                             <span>US</span>
                         </div>
-                        <div class="app-contact">CONTACT : +88017 1010 0202</div>
+                        <div class="app-contact">#</div>
                     </div>
                     <div class="screen-body-item">
                         <div class="app-form">

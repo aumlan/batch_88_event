@@ -48,7 +48,7 @@
 
     @include('layouts.frontend.desktop.parts.header')
     @yield('content')
-    @include('layouts.frontend.desktop.parts.footer')
+{{--    @include('layouts.frontend.desktop.parts.footer')--}}
 
     <!-- back to top area start -->
     <div class="back-to-top">

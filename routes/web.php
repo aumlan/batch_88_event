@@ -62,7 +62,22 @@ Route::get('/home', [UserController::class, 'dashboard'])->name('user.home');
 //Optional Pages
 
 Route::get('/terms-conditions', [HomeController::class, 'terms_conditions'])->name('terms.conditions');
-Route::get('/about', [HomeController::class, 'about'])->name('terms.about');
+
+
+Route::get('/charity-forum', [HomeController::class, 'charity'])->name('charity.forum');
+Route::get('/education-forum', [HomeController::class, 'education'])->name('education.forum');
+Route::get('/environment-forum', [HomeController::class, 'environment'])->name('environment.forum');
+Route::get('/cultural-forum', [HomeController::class, 'cultural'])->name('cultural.forum');
+Route::get('/media-forum', [HomeController::class, 'media'])->name('media.forum');
+Route::get('/health-forum', [HomeController::class, 'health'])->name('health.forum');
+
+
+
+
+
+
+
+
 Route::get('/faqs', [HomeController::class, 'faqs'])->name('faqs');
 Route::get('/refund-policy', [HomeController::class, 'refund'])->name('refund');
 Route::get('/contact-us', [HomeController::class, 'contact'])->name('contact');

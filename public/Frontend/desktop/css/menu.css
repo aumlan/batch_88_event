@@ -1,6 +1,6 @@
 .temp_navbar{
 	border-bottom: 1px solid #B6B8B9;
-    background-color: black;
+    /*background-color: black;*/
 }
 .menu .active a{
 	color: #000;
@@ -36,7 +36,6 @@
 }
 .menu nav ul li a{
 	display: block;
-	color: rgb(0, 0, 0);
 	margin-right: 5px;
 	font-size: 14px;
 	text-decoration: none;
@@ -46,7 +45,7 @@
     white-space: nowrap;
 }
 .menu nav ul li:hover > a{
-	color: #ffc107;
+	/*color: #ffc107;*/
 }
 
 .wishlist{

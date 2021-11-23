@@ -369,7 +369,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::wkaAASo0gKyHmMrv',
+            '_route' => 'generated::3ZyANv4Tuy2pi8Kw',
           ),
           1 => NULL,
           2 => 
@@ -389,7 +389,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::qRdozA8lriz3Cfa4',
+            '_route' => 'generated::JstMGeQynNa1MZvP',
           ),
           1 => NULL,
           2 => 
@@ -409,7 +409,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::8Rd6x48wuWpUAt8z',
+            '_route' => 'generated::P3NAA9bBIXYiZyjH',
           ),
           1 => NULL,
           2 => 
@@ -446,7 +446,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::DlO3FpHFqDLn0huB',
+            '_route' => 'generated::hHEJF2vwUXD08UZQ',
           ),
           1 => NULL,
           2 => 
@@ -481,7 +481,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::loCT4OooczwKdjCA',
+            '_route' => 'generated::ioD37tPHVM0lFUXv',
           ),
           1 => NULL,
           2 => 
@@ -518,7 +518,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::PjNOZQ3QN8OG9QOP',
+            '_route' => 'generated::wKc41KJyn4kVTC2N',
           ),
           1 => NULL,
           2 => 
@@ -609,7 +609,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::wyuqQNf9rSEKCDFY',
+            '_route' => 'generated::Vh7u2JnSXRSfTljb',
           ),
           1 => NULL,
           2 => 
@@ -821,13 +821,113 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/about' => 
+      '/charity-forum' => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'terms.about',
+            '_route' => 'charity.forum',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/education-forum' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'education.forum',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/environment-forum' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'environment.forum',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/cultural-forum' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'cultural.forum',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/media-forum' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'media.forum',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/health-forum' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'health.forum',
           ),
           1 => NULL,
           2 => 
@@ -4356,7 +4456,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::wkaAASo0gKyHmMrv' => 
+    'generated::3ZyANv4Tuy2pi8Kw' => 
     array (
       'methods' => 
       array (
@@ -4373,13 +4473,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:295:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:77:"function (\\Illuminate\\Http\\Request $request) {
     return $request->user();
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000003a3ed06c0000000054fa906d";}";s:4:"hash";s:44:"CPZCnSdxHcCoNTw608iEbNeY+UP4fjQadyc4HMUu4eM=";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000043689a4e0000000048266cb7";}";s:4:"hash";s:44:"avrUTQENByLZ8uY6hBpG7Dc9Fq5sxwefGGnvtVnJMHg=";}}',
         'namespace' => 'App\\Http\\Controllers',
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::wkaAASo0gKyHmMrv',
+        'as' => 'generated::3ZyANv4Tuy2pi8Kw',
       ),
       'fallback' => false,
       'defaults' => 
@@ -4395,7 +4495,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::qRdozA8lriz3Cfa4' => 
+    'generated::JstMGeQynNa1MZvP' => 
     array (
       'methods' => 
       array (
@@ -4412,13 +4512,13 @@ app('router')->setCompiledRoutes(
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:350:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:131:"function() {
     \\Illuminate\\Support\\Facades\\Artisan::call(\'optimize\');
     return \'<center><h1>System Optimized!</h1></center>\';
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000003a3ed06e0000000054fa906d";}";s:4:"hash";s:44:"V1DthztpVumkAJM4ZikPZNstHu84M1bKqvXvu1YcXaM=";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000043689a4c0000000048266cb7";}";s:4:"hash";s:44:"dXepmFwlZyFXOzT+y5IeXYHY9QLZrzqgak52yDILljc=";}}',
         'namespace' => 'App\\Http\\Controllers',
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'generated::qRdozA8lriz3Cfa4',
+        'as' => 'generated::JstMGeQynNa1MZvP',
       ),
       'fallback' => false,
       'defaults' => 
@@ -4434,7 +4534,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::8Rd6x48wuWpUAt8z' => 
+    'generated::P3NAA9bBIXYiZyjH' => 
     array (
       'methods' => 
       array (
@@ -4455,13 +4555,13 @@ app('router')->setCompiledRoutes(
     \\Illuminate\\Support\\Facades\\Artisan::call(\'key:generate\');
     \\Illuminate\\Support\\Facades\\Artisan::call(\'config:cache\');
     return \'<center><h1>System Rebooted!</h1></center>\';
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000003a3ed0680000000054fa906d";}";s:4:"hash";s:44:"BPqmjeX61Zalv4ue6Ftb+GbobrN4SjJM3W0M8nhwxlY=";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000043689a4a0000000048266cb7";}";s:4:"hash";s:44:"YteD5jBOoxqHpZ3BybhLMIySyMqmv9WZb2aHAG74QBM=";}}',
         'namespace' => 'App\\Http\\Controllers',
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'generated::8Rd6x48wuWpUAt8z',
+        'as' => 'generated::P3NAA9bBIXYiZyjH',
       ),
       'fallback' => false,
       'defaults' => 
@@ -4514,7 +4614,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::DlO3FpHFqDLn0huB' => 
+    'generated::hHEJF2vwUXD08UZQ' => 
     array (
       'methods' => 
       array (
@@ -4534,7 +4634,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::DlO3FpHFqDLn0huB',
+        'as' => 'generated::hHEJF2vwUXD08UZQ',
       ),
       'fallback' => false,
       'defaults' => 
@@ -4623,7 +4723,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::PjNOZQ3QN8OG9QOP' => 
+    'generated::wKc41KJyn4kVTC2N' => 
     array (
       'methods' => 
       array (
@@ -4643,7 +4743,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::PjNOZQ3QN8OG9QOP',
+        'as' => 'generated::wKc41KJyn4kVTC2N',
       ),
       'fallback' => false,
       'defaults' => 
@@ -4842,7 +4942,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::wyuqQNf9rSEKCDFY' => 
+    'generated::Vh7u2JnSXRSfTljb' => 
     array (
       'methods' => 
       array (
@@ -4862,7 +4962,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::wyuqQNf9rSEKCDFY',
+        'as' => 'generated::Vh7u2JnSXRSfTljb',
       ),
       'fallback' => false,
       'defaults' => 
@@ -5321,7 +5421,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::loCT4OooczwKdjCA' => 
+    'generated::ioD37tPHVM0lFUXv' => 
     array (
       'methods' => 
       array (
@@ -5342,7 +5442,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::loCT4OooczwKdjCA',
+        'as' => 'generated::ioD37tPHVM0lFUXv',
       ),
       'fallback' => false,
       'defaults' => 
@@ -5580,28 +5680,213 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'terms.about' => 
+    'charity.forum' => 
     array (
       'methods' => 
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'about',
+      'uri' => 'charity-forum',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
         ),
-        'uses' => 'App\\Http\\Controllers\\Frontend\\HomeController@about',
-        'controller' => 'App\\Http\\Controllers\\Frontend\\HomeController@about',
+        'uses' => 'App\\Http\\Controllers\\Frontend\\HomeController@charity',
+        'controller' => 'App\\Http\\Controllers\\Frontend\\HomeController@charity',
         'namespace' => 'App\\Http\\Controllers',
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'terms.about',
+        'as' => 'charity.forum',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'education.forum' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'education-forum',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Frontend\\HomeController@education',
+        'controller' => 'App\\Http\\Controllers\\Frontend\\HomeController@education',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'education.forum',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'environment.forum' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'environment-forum',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Frontend\\HomeController@environment',
+        'controller' => 'App\\Http\\Controllers\\Frontend\\HomeController@environment',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'environment.forum',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'cultural.forum' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'cultural-forum',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Frontend\\HomeController@cultural',
+        'controller' => 'App\\Http\\Controllers\\Frontend\\HomeController@cultural',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'cultural.forum',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'media.forum' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'media-forum',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Frontend\\HomeController@media',
+        'controller' => 'App\\Http\\Controllers\\Frontend\\HomeController@media',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'media.forum',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'health.forum' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'health-forum',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Frontend\\HomeController@health',
+        'controller' => 'App\\Http\\Controllers\\Frontend\\HomeController@health',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'health.forum',
       ),
       'fallback' => false,
       'defaults' => 

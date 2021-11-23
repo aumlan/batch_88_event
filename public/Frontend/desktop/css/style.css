@@ -1676,7 +1676,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000;
+    /*background-color: #a8a8a8;*/
 }
 .menu ul li.static {
     position: static;
@@ -1694,7 +1694,7 @@ a:hover {
 
 .menu nav ul li a {
     display: block;
-    color: #fff;
+    /*color: #fff;*/
     margin-right: 5px;
     font-size: 14px;
     text-decoration: none;
@@ -3521,7 +3521,7 @@ footer p {
 }
 .slider_image {
     width: 100%;
-    height: 100%;
+    height: 81vh;
     overflow: hidden;
     background-color: #000;
 }
@@ -3856,4 +3856,13 @@ footer p {
     .screen-body-item {
         padding: 0;
     }
+}
+
+
+.hero_register_btn{
+    position: absolute;
+    z-index: 999;
+    margin-top: -100px;
+    margin-left: 42%;
+
 }

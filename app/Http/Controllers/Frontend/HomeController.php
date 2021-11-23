@@ -74,6 +74,60 @@ class HomeController extends Controller
         }
     }
 
+    public function charity()
+    {
+        if(!MoBileView()){
+            return view('charity');
+        }else{
+            return view('mobile.about');
+        }
+    }
+
+    public function education()
+    {
+        if(!MoBileView()){
+            return view('education');
+        }else{
+            return view('mobile.about');
+        }
+    }
+
+    public function environment()
+    {
+        if(!MoBileView()){
+            return view('environment');
+        }else{
+            return view('mobile.about');
+        }
+    }
+
+    public function cultural()
+    {
+        if(!MoBileView()){
+            return view('cultural');
+        }else{
+            return view('mobile.about');
+        }
+    }
+
+    public function media()
+    {
+        if(!MoBileView()){
+            return view('media');
+        }else{
+            return view('mobile.about');
+        }
+    }
+
+    public function health()
+    {
+        if(!MoBileView()){
+            return view('health');
+        }else{
+            return view('mobile.about');
+        }
+    }
+
     public function refund()
     {
         return view('refuenPolicy');

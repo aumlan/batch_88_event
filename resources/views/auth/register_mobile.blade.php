@@ -31,6 +31,7 @@
                                                 <form method="POST" action="{{ route('register') }}">
                                                     @csrf
                                                     <div class="form-label-group mb-2">
+                                                        <label style="width: 30%">সদস্যের নাম</label>
                                                         <input id="inputName" value="{{ old('name') }}" name="name" autocomplete="name" autofocus class="form-control @error('name') is-invalid @enderror" placeholder="Name" required>
                                                     </div>
                                                     @error('name')
@@ -39,6 +40,7 @@
                                                         </span>
                                                     @enderror
                                                     <div class="form-label-group mb-2">
+                                                        <label style="width: 30%">ইমেইল </label>
                                                         <input type="email" id="inputEmail" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="Email" required autocomplete="email">
                                                         @error('email')
                                                         <span class="invalid-feedback" role="alert">
