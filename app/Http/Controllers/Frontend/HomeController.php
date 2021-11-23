@@ -79,7 +79,7 @@ class HomeController extends Controller
         if(!MoBileView()){
             return view('charity');
         }else{
-            return view('mobile.about');
+            return view('mobile.charity');
         }
     }
 
@@ -88,7 +88,7 @@ class HomeController extends Controller
         if(!MoBileView()){
             return view('education');
         }else{
-            return view('mobile.about');
+            return view('mobile.education');
         }
     }
 
@@ -97,7 +97,7 @@ class HomeController extends Controller
         if(!MoBileView()){
             return view('environment');
         }else{
-            return view('mobile.about');
+            return view('mobile.environment');
         }
     }
 
@@ -106,7 +106,7 @@ class HomeController extends Controller
         if(!MoBileView()){
             return view('cultural');
         }else{
-            return view('mobile.about');
+            return view('mobile.cultural');
         }
     }
 
@@ -115,7 +115,7 @@ class HomeController extends Controller
         if(!MoBileView()){
             return view('media');
         }else{
-            return view('mobile.about');
+            return view('mobile.media');
         }
     }
 
@@ -124,7 +124,7 @@ class HomeController extends Controller
         if(!MoBileView()){
             return view('health');
         }else{
-            return view('mobile.about');
+            return view('mobile.health');
         }
     }
 
