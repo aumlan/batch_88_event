@@ -66,9 +66,9 @@
                 <a href="{{route('admin.order.list')}}"><i class="fa fa-shopping-bag "></i><span class="menu-title">Orders</span></a>
             </li>
 
-{{--            <li class="@if(Route::is('admin.user.list')) active @endif nav-item">--}}
-{{--                <a href="{{route('admin.user.list')}}"><i class="fa fa-user"></i><span class="menu-title">Users</span></a>--}}
-{{--            </li>--}}
+            <li class="@if(Route::is('admin.user.list')) active @endif nav-item">
+                <a href="{{route('admin.user.list')}}"><i class="fa fa-user"></i><span class="menu-title">Users</span></a>
+            </li>
 
 {{--            <li class="@if(Route::is('admin.brand.index')) active @endif nav-item"><a href="{{route('admin.brand.index')}}"><i class="fa fa-linode"></i><span class="menu-title" data-i18n="Dashboard">Brand</span></a></li>--}}
 

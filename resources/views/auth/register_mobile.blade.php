@@ -14,6 +14,9 @@
                 <section >
                     <div class="col-xl-8 col-12 d-flex justify-content-center">
                         <div class="card  rounded-0 mb-0" >
+                            <form method="POST" action="{{ route('user.registration') }}" enctype="multipart/form-data">
+                                @csrf
+
                             <div class="row m-0">
 
                                 <div class="w-100 text-center my-3">
@@ -22,8 +25,6 @@
                                     </div>
                                 </div>
 
-                                <form method="POST" action="{{ route('register') }}">
-                                    @csrf
 
                                     <div  class="col-md-4 mb-4">
                                         <div class="form-label-group mb-3" >
@@ -39,7 +40,7 @@
                                                 <br/>
                                                 <span >এখানে ক্লিক করে ছবি সংযুক্ত করুন </span>
 
-                                                <input id="file-input" type="file" name="picture" style="display: none"/>
+                                                <input id="file-input" type="file" name="profile_picture" style="display: none"/>
 
 
 
@@ -243,7 +244,7 @@
 
 
 {{--                                                    <a href="{{route('login')}}" class="button-68">Login</a>--}}
-                                                    <button type="submit" class="button-68">Register</button>
+                                                    <button type="submit" class="button-68">রেজিস্টার </button>
 
                                             </div>
                                         </div>
@@ -253,10 +254,10 @@
 
 
 
-                                </form>
+
 
                             </div>
-
+                            </form>
                         </div>
                     </div>
                 </section>

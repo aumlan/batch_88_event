@@ -10,6 +10,7 @@ use App\Models\Currency;
 use App\Models\Gallery;
 use App\Models\Product;
 use App\Models\Slider;
+use App\Models\User;
 use App\QueryFilters\Brand_Sort;
 use App\QueryFilters\Model_Sort;
 use App\QueryFilters\Type_Sort;
@@ -19,6 +20,7 @@ use Illuminate\Http\Request;
 use Illuminate\Pipeline\Pipeline;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class HomeController extends Controller
 {
@@ -233,4 +235,37 @@ class HomeController extends Controller
 
 
     }
+
+    public function user_registration(Request $request)
+    {
+        $imageName='';
+        if ($request->hasFile('profile_picture')){
+            $imageName = time().'.'.$request->profile_picture->extension();
+            $request->profile_picture->move(public_path('/images/users'), $imageName);
+        }
+
+        $user  = new User();
+        $user->name=$request->name;
+        $user->email=$request->email;
+        $user->phone=$request->phone;
+        $user->school=$request->school;
+        $user->dob=$request->dob;
+        $user->zila=$request->zila;
+        $user->designation=$request->designation;
+        $user->permanent_address=$request->permanentAddress;
+        $user->current_address=$request->currentAddress;
+        $user->blood=$request->blood;
+        $user->bikash=$request->bikash;
+        $user->fb=$request->fb;
+        $user->picture=$imageName;
+        $user->password=Hash::make($request->password);
+
+        $user->save();
+
+        return redirect()->route('welcome');
+    }
+
+
+
+
 }

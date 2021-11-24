@@ -71,6 +71,8 @@ Route::get('/cultural-forum', [HomeController::class, 'cultural'])->name('cultur
 Route::get('/media-forum', [HomeController::class, 'media'])->name('media.forum');
 Route::get('/health-forum', [HomeController::class, 'health'])->name('health.forum');
 
+Route::post('/user-registration', [HomeController::class, 'user_registration'])->name('user.registration');
+
 
 
 

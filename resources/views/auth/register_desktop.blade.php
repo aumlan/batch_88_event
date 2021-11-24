@@ -30,14 +30,17 @@
                                     <h4 class="pl-4">রেজিস্ট্রেশন   ফর্ম </h4>
                                 </div>
                             </div>
+                            <form method="POST" action="{{ route('user.registration') }}" enctype="multipart/form-data">
+                                @csrf
                             <div class="row m-0">
+
+
 
                                 <div class="col-md-7 p-0 ml-3">
                                     <div class="card rounded-0 " style="border: none !important; margin-bottom: 0 !important;">
                                         <div class="card-content">
                                             <div class="card-body pt-1">
-                                                <form method="POST" action="{{ route('register') }}">
-                                                    @csrf
+
 
                                                     <div class="form-label-group d-flex mb-3">
                                                         <label style="width: 30%">সদস্যের নাম</label>
@@ -215,7 +218,7 @@
                                                     <button type="submit" class="button-68" role="button">রেজিস্টার </button>
 
 
-                                                </form>
+
                                             </div>
                                         </div>
 
@@ -231,7 +234,7 @@
                                             <br/>
                                             <span >এখানে ক্লিক করে ছবি সংযুক্ত করুন </span>
 
-                                            <input id="file-input" type="file" name="picture" style="display: none"/>
+                                            <input id="file-input" type="file" name="profile_picture" style="display: none"/>
                                             <br/>
                                             <hr/>
                                             <br/>
@@ -256,7 +259,10 @@
 
 
                                 </div>
+
+
                             </div>
+                            </form>
                         </div>
                     </div>
                 </section>
