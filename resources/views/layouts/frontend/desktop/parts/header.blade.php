@@ -87,7 +87,7 @@
                 <div class="col-lg-3 top-header-left-side mr-4">
                     <a href="{{ url('/') }}">
                         <div class="logo">
-{{--                            <img src="{{ asset('site_image/logo.png') }}" alt="" width="100px">--}}
+                            <img src="{{ asset('site_image/logo_WA0007.jpg') }}" alt="" width="100px">
 
                         </div>
                     </a>
