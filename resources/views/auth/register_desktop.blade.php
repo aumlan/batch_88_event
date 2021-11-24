@@ -43,7 +43,7 @@
 
 
                                                     <div class="form-label-group d-flex mb-3">
-                                                        <label style="width: 30%">সদস্যের নাম</label>
+                                                        <label style="width: 30%">সদস্যের নাম <span style="color: red;font-size: 17px;">*</span> </label>
                                                         <input id="inputName" value="{{ old('name') }}" name="name" autocomplete="name" autofocus class="form-control @error('name') is-invalid @enderror"  required>
                                                         @error('name')
                                                         <span class="invalid-feedback" role="alert">
@@ -63,7 +63,7 @@
                                                     </div>
 
                                                     <div class="form-label-group d-flex mb-3">
-                                                        <label style="width: 30%">মোবাইল নাম্বার</label>
+                                                        <label style="width: 30%">মোবাইল নাম্বার<span style="color: red;font-size: 17px;">*</span></label>
                                                         <input type="number" id="inputPhone" class="form-control" @error('phone') is-invalid @enderror name="phone" value="{{ old('phone') }}"  required autocomplete="phone">
                                                         @error('phone')
                                                         <span class="invalid-feedback" role="alert">
@@ -73,7 +73,7 @@
                                                     </div>
 
                                                     <div class="form-label-group d-flex mb-3">
-                                                        <label style="width: 30%">বিদ্যালয়ের নাম</label>
+                                                        <label style="width: 30%">বিদ্যালয়ের নাম<span style="color: red;font-size: 17px;">*</span></label>
                                                         <input type="text" id="inputSchool" class="form-control" @error('school') is-invalid @enderror name="school" value="{{ old('school') }}"  required autocomplete="school">
                                                         @error('school')
                                                         <span class="invalid-feedback" role="alert">
@@ -83,7 +83,7 @@
                                                     </div>
 
                                                     <div class="form-label-group d-flex mb-3">
-                                                        <label style="width: 30%">জন্ম তারিখ </label>
+                                                        <label style="width: 30%">জন্ম তারিখ <span style="color: red;font-size: 17px;">*</span></label>
                                                         <input type="date" id="inputDOB" class="form-control" @error('dob') is-invalid @enderror name="dob" value="{{ old('dob') }}"  required autocomplete="dob">
                                                         @error('dob')
                                                         <span class="invalid-feedback" role="alert">
@@ -93,7 +93,7 @@
                                                     </div>
 
                                                     <div class="form-label-group d-flex mb-3">
-                                                        <label style="width: 30%">জেলা / প্যানেল</label>
+                                                        <label style="width: 30%">জেলা / প্যানেল<span style="color: red;font-size: 17px;">*</span></label>
                                                         <input type="text" id="inputZila" class="form-control" @error('zila') is-invalid @enderror name="zila" value="{{ old('zila') }}"  required autocomplete="zila">
                                                         @error('zila')
                                                         <span class="invalid-feedback" role="alert">
@@ -103,7 +103,7 @@
                                                     </div>
 
                                                     <div class="form-label-group d-flex">
-                                                        <label style="width: 30%">পদবি </label>
+                                                        <label style="width: 30%">পদবি <span style="color: red;font-size: 17px;">*</span></label>
                                                         <select id="designation" name="designation" style="width: 100%">
                                                             <option value="" disabled selected>পদবি</option>
                                                             <option value="coordinator">কোঅর্ডিনেটর</option>
@@ -121,7 +121,7 @@
                                                     </div>
 
                                                     <div class="form-label-group d-flex mb-3"  style= "margin-top: 15px">
-                                                        <label style="width: 30%">স্থায়ী ঠিকানা </label>
+                                                        <label style="width: 30%">স্থায়ী ঠিকানা <span style="color: red;font-size: 17px;">*</span></label>
                                                         <input type="text" id="inputPermanentAddress" class="form-control" @error('permanentAddress') is-invalid @enderror name="permanentAddress" value="{{ old('permanentAddress') }}"  required autocomplete="permanentAddress">
                                                         @error('permanentAddress')
                                                         <span class="invalid-feedback" role="alert">
@@ -131,7 +131,7 @@
                                                     </div>
 
                                                     <div class="form-label-group d-flex mb-3">
-                                                        <label style="width: 30%">বর্তমান ঠিকানা </label>
+                                                        <label style="width: 30%">বর্তমান ঠিকানা <span style="color: red;font-size: 17px;">*</span></label>
                                                         <input type="text" id="currentAddress" class="form-control" @error('currentAddress') is-invalid @enderror name="currentAddress" value="{{ old('currentAddress') }}"  required autocomplete="currentAddress">
                                                         @error('permanentAddress')
                                                         <span class="invalid-feedback" role="alert">
@@ -141,7 +141,7 @@
                                                     </div>
 
                                                     <div class="form-label-group d-flex">
-                                                        <label style="width: 30%">রক্তের গ্রুপ</label>
+                                                        <label style="width: 30%">রক্তের গ্রুপ<span style="color: red;font-size: 17px;">*</span></label>
                                                         <select id="blood" name="blood" style="width: 100%">
                                                             <option value="" disabled selected>রক্তের গ্রুপ</option>
                                                             <option vlaue="a_pos">এ পজিটিভ </option>
@@ -162,8 +162,8 @@
                                                     </div>
 
                                                     <div class="form-label-group mb-3 d-flex" style="margin-top: 15px">
-                                                        <label style="width: 30%">বিকাশ নাম্বার </label>
-                                                        <input type="text" id="inputBikash" class="form-control" @error('bikash') is-invalid @enderror name="bikash" value="{{ old('bikash') }}"  required autocomplete="bikash">
+                                                        <label style="width: 30%">যে নাম্বার থেকে বিকাশ করেছেন</label>
+                                                        <input type="text" id="inputBikash" class="form-control" @error('bikash') is-invalid @enderror name="bikash" value="{{ old('bikash') }}"  required autocomplete="bikash" style="height: 40px">
                                                         @error('bikash')
                                                         <span class="invalid-feedback" role="alert">
                                                                 <strong>{{ $message }}</strong>
@@ -181,20 +181,20 @@
                                                         @enderror
                                                     </div>
 
-                                                    <div class="form-label-group d-flex mb-3">
-                                                        <label style="width: 30%">পাসওয়ার্ড</label>
-                                                        <input type="password" id="inputPassword" class="form-control @error('password') is-invalid @enderror"  name="password" required autocomplete="new-password">
-                                                        @error('password')
-                                                        <span class="invalid-feedback" role="alert">
-                                                                <strong>{{ $message }}</strong>
-                                                            </span>
-                                                        @enderror
-                                                    </div>
+{{--                                                    <div class="form-label-group d-flex mb-3">--}}
+{{--                                                        <label style="width: 30%">পাসওয়ার্ড</label>--}}
+{{--                                                        <input type="password" id="inputPassword" class="form-control @error('password') is-invalid @enderror"  name="password" required autocomplete="new-password">--}}
+{{--                                                        @error('password')--}}
+{{--                                                        <span class="invalid-feedback" role="alert">--}}
+{{--                                                                <strong>{{ $message }}</strong>--}}
+{{--                                                            </span>--}}
+{{--                                                        @enderror--}}
+{{--                                                    </div>--}}
 
-                                                    <div class="form-label-group d-flex mb-3">
-                                                        <label style="width: 30%">কনফার্ম পাসওয়ার্ড</label>
-                                                        <input type="password" id="inputConfPassword" name="password_confirmation" class="form-control"  required autocomplete="new-password">
-                                                    </div>
+{{--                                                    <div class="form-label-group d-flex mb-3">--}}
+{{--                                                        <label style="width: 30%">কনফার্ম পাসওয়ার্ড</label>--}}
+{{--                                                        <input type="password" id="inputConfPassword" name="password_confirmation" class="form-control"  required autocomplete="new-password">--}}
+{{--                                                    </div>--}}
 
                                                     <div class="form-group row mb-2">
                                                         <div class="col-12">
