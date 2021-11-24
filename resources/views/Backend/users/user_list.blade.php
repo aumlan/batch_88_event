@@ -21,9 +21,16 @@
                                     <th>#</th>
                                     <th>Name</th>
                                     <th>Email</th>
-                                    <th>Currency</th>
-                                    <th>Country</th>
-                                    <th>Language</th>
+                                    <th>Mobile</th>
+                                    <th>School </th>
+                                    <th>DOB</th>
+                                    <th>Panel/Zilaa</th>
+                                    <th>Designation</th>
+                                    <th>Permanent Address</th>
+                                    <th>Current Address</th>
+                                    <th>Blood Group</th>
+                                    <th>Bikash</th>
+                                    <th>FB ID</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -33,10 +40,16 @@
                                         <td>{{ $loop->iteration }}</td>
                                         <td>{{$user->name}}</td>
                                         <td>{{$user->email}}</td>
-                                        <td>{{$user->currency}}</td>
-                                        <td>{{$user->country}}</td>
-                                        <td>{{$user->language}}</td>
-
+                                        <td>{{$user->phone}}</td>
+                                        <td>{{$user->school}}</td>
+                                        <td>{{$user->dob}}</td>
+                                        <td>{{$user->zila}}</td>
+                                        <td>{{$user->designation}}</td>
+                                        <td>{{$user->permanent_address}}</td>
+                                        <td>{{$user->current_address}}</td>
+                                        <td>{{$user->blood}}</td>
+                                        <td>{{$user->bikash}}</td>
+                                        <td>{{$user->fb}}</td>
                                         <td class="float-right">
                                             <a href="#" onclick="deleteCategory({{$user->id}})"  class="btn btn-sm btn-danger">
                                                 <i class="feather icon-trash"></i></a>

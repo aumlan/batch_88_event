@@ -3856,9 +3856,64 @@ footer p {
 
 
 .hero_register_btn{
-    position: absolute;
-    z-index: 999;
-    margin-top: -100px;
-    margin-left: 42%;
+    /*position: absolute;*/
+    /*z-index: 999;*/
+    /*margin-top: -100px;*/
+    /*margin-left: 42%;*/
 
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+
+.custom_btn{
+    padding: 10px 25px;
+    border: 2px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+.btn_5 {
+    background: #17ac60;
+    color: #fff !important;
+    line-height: 42px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 10px;
+}
+.btn_5:hover {
+    background: transparent;
+    color: #000 !important;
+    box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+}
+.btn_5:before,
+.btn_5:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #000;
+    transition:400ms ease all;
+}
+.btn_5:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+.btn_5:hover:before,
+.btn_5:hover:after{
+    width:100%;
+    transition:800ms ease all;
 }
