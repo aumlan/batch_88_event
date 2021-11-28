@@ -53,6 +53,7 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'uid' => ['required','unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'phone' => ['required'],
             'school' => ['required'],
@@ -99,6 +100,7 @@ class RegisterController extends Controller
 //        $avatar_name  = time() . '.' . $extension;
 //        $data->picture->move(base_path('images/users/'), $avatar_name);
 
+
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
@@ -113,6 +115,7 @@ class RegisterController extends Controller
             'bikash'=> $data['bikash'],
             'fb'=> $data['fb'],
             'picture'=> $data['picture'],
+            'uid'=> $data['uid'],
             'password' => Hash::make($data['password']),
         ]);
     }

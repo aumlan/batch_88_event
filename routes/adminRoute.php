@@ -153,6 +153,9 @@ Route::group(['prefix' => 'admin','namespace' => 'Backend','as'=>'admin.','middl
     Route::get('/user/delete/{id}','User\UserController@destroy')->name('user.destroy');
 //    Route::get('/order/updateOrderStatus/{id}','Order\OrderController@statusChange')->name('order.statusChange');
 
+    Route::get('/contact/list','User\UserController@contact')->name('contact.list');
+    Route::get('/contact/delete/{id}','User\UserController@destroyContact')->name('contact.destroy');
+
 
     //Software  route
     Route::get('/software','Product\SoftwareProductController@index')->name('software.index');

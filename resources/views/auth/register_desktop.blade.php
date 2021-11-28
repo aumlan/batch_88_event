@@ -45,6 +45,11 @@
                                                     <div class="form-label-group d-flex mb-3">
                                                         <label style="width: 30%">সদস্যের নাম <span style="color: red;font-size: 17px;">*</span> </label>
                                                         <input id="inputName" value="{{ old('name') }}" name="name" autocomplete="name" autofocus class="form-control @error('name') is-invalid @enderror"  required>
+                                                        <input type="hidden" id="inputName"
+                                                               @php
+                                                                   $randomNumber = 'b88-'. random_int(10000, 99999);
+                                                               @endphp
+                                                               value="{{ $randomNumber }}" name="uid" >
                                                         @error('name')
                                                         <span class="invalid-feedback" role="alert">
                                                             <strong>{{ $message }}</strong>

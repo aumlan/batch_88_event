@@ -239,6 +239,12 @@ class HomeController extends Controller
 
     public function user_registration(Request $request)
     {
+
+        $validated = $request->validate([
+            'uid' => 'required|unique:users',
+            'name' => 'required',
+        ]);
+
         $imageName='';
         if ($request->hasFile('profile_picture')){
             $imageName = time().'.'.$request->profile_picture->extension();
@@ -259,6 +265,7 @@ class HomeController extends Controller
         $user->bikash=$request->bikash;
         $user->fb=$request->fb;
         $user->picture=$imageName;
+        $user->uid=$request->uid;
         $user->password=Hash::make($request->password);
 
         $user->save();
