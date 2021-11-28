@@ -9,7 +9,7 @@ Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'admin'
 
 Route::group(['prefix' => 'admin','namespace' => 'Backend','as'=>'admin.'], function () {
     // Login Route
-    Route::get('/ecommerce/login','Auth\LoginController@showLoginForm')->name('login');
+    Route::get('/login','Auth\LoginController@showLoginForm')->name('login');
     Route::post('/ecommerce/login/submit','Auth\LoginController@login')->name('login.submit');
     // Logout Route
     Route::post('/ecommerce/logout/submit','Auth\LoginController@logout')->name('logout.submit');

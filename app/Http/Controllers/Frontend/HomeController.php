@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Brand;
 use App\Models\BrandModel;
 use App\Models\BrandModelYear;
+use App\Models\Contact;
 use App\Models\Currency;
 use App\Models\Gallery;
 use App\Models\Product;
@@ -265,7 +266,17 @@ class HomeController extends Controller
         return redirect()->route('welcome');
     }
 
+    public function user_message(Request $request)
+    {
+        $contact = new Contact();
+        $contact->name=$request->name;
+        $contact->email=$request->email;
+        $contact->mobile=$request->mobile;
+        $contact->message=$request->message;
 
+        $contact->save();
+        return back();
+    }
 
 
 }
