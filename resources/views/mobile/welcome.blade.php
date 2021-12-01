@@ -16,6 +16,30 @@
             </a>
         </div>
 
+        <div class="text-center">
+            <p style="color: red;font-weight: 600;margin-bottom: 15px">রেজিস্ট্রেশন এর জন্য যোগাযোগ:</p>
+
+        </div>
+
+        <div >
+            {{--            <a  href={{ route('register') }} class="button-68" style="font-size: 11px">রেজিস্ট্রেশান এর জন্য ক্লিক করুন </a>--}}
+
+
+            <ul style="margin-left: 25%;">
+                <li style="color: red;font-weight: 600;padding-bottom: 3px">খোকন&nbsp;&nbsp;&nbsp;- ০১৭১১৩০৭০৫৫</li>
+                <li style="color: red;font-weight: 600;padding-bottom: 3px">দুলারি&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ০১৫০২৮৮২৮২৯</li>
+                <li style="color: red;font-weight: 600;padding-bottom: 3px">কিরণ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ০১৯৭১৫৩৫৮৩৮</li>
+                <li style="color: red;font-weight: 600;padding-bottom: 3px">মুন্নী&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ০১৮৩৯৫৫৬৬০৭</li>
+                <li style="color: red;font-weight: 600;padding-bottom: 3px">সীমা&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ০১৭১২ ২৮০১৬৯</li>
+                <li style="color: red;font-weight: 600;padding-bottom: 3px">বাদল&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ০১৮১৯১০৯২৪৪</li>
+                <li style="color: red;font-weight: 600;padding-bottom: 3px">সিরাজী&nbsp;&nbsp;- ০১৮৫৬৪৭৬০০১</li>
+                <li style="color: red;font-weight: 600;padding-bottom: 3px">আক্তার&nbsp;&nbsp;- ০১৬১৬০৬২২০০</li>
+                <li style="color: red;font-weight: 600;padding-bottom: 3px">ভুট্টো&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ০১৭১১৩৭১৬২৫</li>
+                <li style="color: red;font-weight: 600;padding-bottom: 3px">মহি&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ০১৬৭১৮০৪৭২০</li>
+            </ul>
+        </div>
+
+
     </div>
 
 
