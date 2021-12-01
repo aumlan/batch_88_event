@@ -19,6 +19,7 @@
                             <thead>
                                 <tr class="bg-primary text-white">
                                     <th>#</th>
+                                    <th>Image</th>
                                     <th>Name</th>
                                     <th>Email</th>
                                     <th>Mobile</th>
@@ -29,7 +30,8 @@
                                     <th>Permanent Address</th>
                                     <th>Current Address</th>
                                     <th>Blood Group</th>
-                                    <th>Bikash</th>
+                                    <th>Bikash From</th>
+                                    <th>Bikash To</th>
                                     <th>FB ID</th>
                                     <th>Action</th>
                                 </tr>
@@ -38,6 +40,11 @@
                             @foreach ($users as $user )
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
+                                        <td>
+                                            @if ($user->picture)
+                                                <img src="{{ '/images/users/'. $user->picture }}" alt="" srcset="" style="width: 100px">
+                                            @endif
+                                        </td>
                                         <td>{{$user->name}}</td>
                                         <td>{{$user->email}}</td>
                                         <td>{{$user->phone}}</td>
@@ -49,6 +56,7 @@
                                         <td>{{$user->current_address}}</td>
                                         <td>{{$user->blood}}</td>
                                         <td>{{$user->bikash}}</td>
+                                        <td>{{$user->bikashto}}</td>
                                         <td>{{$user->fb}}</td>
                                         <td class="float-right">
                                             <a href="#" onclick="deleteCategory({{$user->id}})"  class="btn btn-sm btn-danger">
