@@ -263,6 +263,7 @@ class HomeController extends Controller
         $user->current_address=$request->currentAddress;
         $user->blood=$request->blood;
         $user->bikash=$request->bikash;
+        $user->bikashto=$request->bikashto;
         $user->fb=$request->fb;
         $user->picture=$imageName;
         $user->uid=$request->uid;

@@ -176,6 +176,16 @@
                                                         @enderror
                                                     </div>
 
+                                                <div class="form-label-group mb-3 d-flex" style="margin-top: 15px">
+                                                    <label style="width: 30%">যে নাম্বারে বিকাশ করেছেন</label>
+                                                    <input type="text" id="inputBikashto" class="form-control" @error('bikashto') is-invalid @enderror name="bikashto" value="{{ old('bikashto') }}"  required autocomplete="bikashto" style="height: 40px">
+                                                    @error('bikashto')
+                                                    <span class="invalid-feedback" role="alert">
+                                                                <strong>{{ $message }}</strong>
+                                                            </span>
+                                                    @enderror
+                                                </div>
+
                                                     <div class="form-label-group mb-3 d-flex">
                                                         <label style="width: 30%">ফেইসবুক আইডি</label>
                                                         <input type="text" id="inputFB" class="form-control" @error('fb') is-invalid @enderror name="fb" value="{{ old('fb') }}"  required autocomplete="fb">

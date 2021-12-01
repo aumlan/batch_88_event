@@ -212,6 +212,17 @@
                                                         @enderror
                                                     </div>
 
+                                                <div class="form-label-group  d-flex" >
+                                                    {{--                                                        <label style="width: 30%">যে নাম্বার থেকে বিকাশ করেছেন</label>--}}
+                                                    <small><span style="color: white;">*</span></small>
+                                                    <input  id="inputBikashto"  @error('bikashto') is-invalid @enderror name="bikashto" value="{{ old('bikashto') }}" placeholder="যে নাম্বারে বিকাশ করেছেন" required autocomplete="bikashto">
+                                                    @error('bikashto')
+                                                    <span class="invalid-feedback" role="alert">
+                                                                <strong>{{ $message }}</strong>
+                                                            </span>
+                                                    @enderror
+                                                </div>
+
                                                     <div class="form-label-group  d-flex">
                                                         <small><span style="color: white;">*</span></small>
 {{--                                                        <label style="width: 30%">ফেইসবুক আইডি</label>--}}
