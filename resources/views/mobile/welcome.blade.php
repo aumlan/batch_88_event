@@ -92,6 +92,7 @@
 
 @endsection
 @push('js')
+
     <script>
         $('.Searchbox__keyword__input').keyup(function() {
             let typeInput = $('.Searchbox__keyword__input').val();
@@ -101,7 +102,6 @@
 
     <script>
         $(document).ready(function() {
-
             $(".owl-carousel#single_slider").owlCarousel({
                 loop: true,
                 margin: 0,

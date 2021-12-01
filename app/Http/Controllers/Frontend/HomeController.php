@@ -23,6 +23,7 @@ use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
+
 class HomeController extends Controller
 {
     public function index(){
@@ -270,6 +271,20 @@ class HomeController extends Controller
         $user->password=Hash::make($request->password);
 
         $user->save();
+        Toastr::success('বন্ধু,<br/>আসসালামু আলাইকুম । <br/> তোমার রেজিষ্ট্রেশন সফলভাবে সম্পন্ন হয়েছে । এস এম এস এর মাধ্যমে রেজিষ্টেশন আইডি নম্বর সহ অন্যান্য বিস্তারিত তথ্য জানিয়ে দেয়া হবে ।','Success');
+
+
+
+
+
+
+//        $notification = array(
+//            'message' => 'বন্ধু,
+//                        আসসালামু আলাইকুম,
+//                        তোমার রেজিষ্ট্রেশন সফলভাবে সম্পন্ন হয়েছে।
+//                        এস এম এস এর মাধ্যমে রেজিষ্টেশন আইডি নম্বর সহ অন্যান্য বিস্তারিত তথ্য জানিয়ে দেয়া হবে।',
+//            'alert-type' => 'success'
+//        );
 
         return redirect()->route('welcome');
     }

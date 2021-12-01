@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="{{ asset('Frontend/desktop/css/toastr.min.css') }}">
 
 
+
     <!-- CSS here -->
         <link rel="stylesheet" href="{{asset('Frontend/desktop/css/default.css')}}">
         <link rel="stylesheet" href="{{asset('Frontend/desktop/css/menu.css')}}">
@@ -92,10 +93,12 @@
 
     <script src="{{asset('Frontend/desktop/js/toastr.min.js')}}"></script>
     {!! Toastr::message() !!}
+
     <script>
 
         // $('.auto_completed_box').css('display', 'none');
         $('#search_input').keyup(function(e) {
+            console.log('keyup');
             if (e.keyCode == 13) {
                 let typeInput = $('#search_input').val();
                 window.location.href = '/pages/search-results-page?q=' + typeInput ;

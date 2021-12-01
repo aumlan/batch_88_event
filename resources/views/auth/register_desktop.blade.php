@@ -18,6 +18,7 @@
     <!-- BEGIN: Custom CSS-->
 @endpush
 @section('content')
+
     <div class="app-content content" >
         <div class="content-wrapper">
 
@@ -344,6 +345,7 @@
         <script src="{{asset('backendAsset/app-assets/js/core/app.js')}}"></script>
         <script src="{{asset('backendAsset/app-assets/js/scripts/components.js')}}"></script>
         <!-- END: Theme JS-->
+
 
     @endpush
 
