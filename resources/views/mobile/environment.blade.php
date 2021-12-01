@@ -51,24 +51,27 @@
 
                         </div>
                         <div class="screen-body-item">
-                            <div class="app-form">
-                                <div class="app-form-group">
-                                    <input class="app-form-control text-dark" placeholder="নাম " value="">
+                            <form method="POST" action="{{ route('user.contact') }}" >
+                                @csrf
+                                <div class="app-form">
+                                    <div class="app-form-group">
+                                        <input class="app-form-control text-dark"  name="name" placeholder="নাম " value="">
+                                    </div>
+                                    <div class="app-form-group">
+                                        <input class="app-form-control text-dark" name="email" placeholder="ইমেইল ">
+                                    </div>
+                                    <div class="app-form-group">
+                                        <input class="app-form-control text-dark" name="mobile" placeholder="মোবাইল ">
+                                    </div>
+                                    <div class="app-form-group message">
+                                        <input class="app-form-control text-dark" name="message" placeholder="ম্যাসেজ ">
+                                    </div>
+                                    <div class="app-form-group buttons">
+                                        <button class=" button-68">বাদ দিন </button>
+                                        <button type="submit" class=" button-68">সাবমিট </button>
+                                    </div>
                                 </div>
-                                <div class="app-form-group">
-                                    <input class="app-form-control text-dark" placeholder="ইমেইল ">
-                                </div>
-                                <div class="app-form-group">
-                                    <input class="app-form-control text-dark" placeholder="মোবাইল ">
-                                </div>
-                                <div class="app-form-group message">
-                                    <input class="app-form-control text-dark" placeholder="ম্যাসেজ ">
-                                </div>
-                                <div class="app-form-group buttons">
-                                    <button class=" button-68">বাদ দিন </button>
-                                    <button class=" button-68">সাবমিট </button>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
